@@ -1,10 +1,12 @@
 package step_definitions;
 
 import cucumber.api.DataTable;
+import cucumber.api.Transform;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import page_objects.User;
-import utils.BaseUtil;
+import transformation.EmailTransform;
+import utils.Environment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,21 +14,26 @@ import java.util.List;
 /**
  * Created by Thomas on 12/14/2016.
  */
-public class cucumber_steps extends BaseUtil {
-    private BaseUtil baseUtil;
-    public cucumber_steps(BaseUtil baseUtil) {
-        this.baseUtil = baseUtil;
+public class cucumber_steps extends Environment {
+    private Environment environment;
+    public cucumber_steps(Environment environment) {
+        this.environment = environment;
     }
+
+    // ==================================================
 
     @Given("^user goes to fake website$")
     public void userGoesToFakeWebsite() throws Throwable {
-        System.out.println("step1: "+ baseUtil.StepInfo);
+        System.out.println("env StepInfo: "+ environment.StepInfo);
+    }
+
+    @Given("^user goes to website \"([^\"]*)\"$")
+    public void userGoesToFakeWebsite(String url) throws Throwable {
+        System.out.println("url=" + url);
     }
 
     @And("^user enters the following info$")
     public void userEntersTheFollowingInfo(DataTable table) throws Throwable {
-        System.out.println("step2");
-
 //        List<List<String>> data = table.raw();
 //        for (int i = 0; i < data.size(); i++) {
 //            System.out.println(data.get(i));
@@ -41,8 +48,9 @@ public class cucumber_steps extends BaseUtil {
         }
     }
 
-    @Given("^user goes to fake website \"([^\"]*)\"$")
-    public void userGoesToFakeWebsite(String url) throws Throwable {
-        System.out.println("url=" + url);
+    @And("^user enter the email address as \"([^\"]*)\"$")
+    public void userEnterTheEmailAddressAs(@Transform(EmailTransform.class) String email) throws Throwable {
+        // @Transform will modify the parameters before using it
+        System.out.println("## Email: "+ email +"##");
     }
 }

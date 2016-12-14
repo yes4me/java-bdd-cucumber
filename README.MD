@@ -89,9 +89,9 @@ Shortcuts for Intellij IDEA:
 * General
     * CTRL + / = comment
 * Features:
-    * CTRL + left click = Go to the corresponding step definition
     * Alt + Return = create step definition for the selected feature
-    * CTRL + Alt + L = fix the indentation
+    * CTRL + left click = Read the corresponding step definition
+    * CTRL + Alt + L = fix indentations
 * Classes:
     * ALT + Insert = auto generate codes (ex: constructor)
 
@@ -110,7 +110,8 @@ To do:
 * Gherkin = format for cucumber specification for the purpose of documentation and automated tests
 * Cucumber = popular tool to help write BDD
 
-* glue = map the features to step definitions 
+* glue = map the features to step definitions
+* step argument transformation ~ environment variable
 
 ## Sources
 ---
@@ -125,6 +126,9 @@ To do:
 * Tutorials:
 
     * [Cucumber with Selenium Java (Basic)](https://www.udemy.com/cucumber-with-selenium/learn/v4/overview)
+    * [Tutorial in Java](https://www.tutorialspoint.com/java/java_regular_expressions.htm)
 
 * Inspirational codes:
 * Others:
+
+    * [Regex](https://regex101.com/)
