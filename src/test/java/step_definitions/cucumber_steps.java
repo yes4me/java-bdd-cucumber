@@ -14,9 +14,9 @@ import java.util.List;
 /**
  * Created by Thomas on 12/14/2016.
  */
-public class cucumber_steps extends Environment {
+public class Cucumber_steps extends Environment {
     private Environment environment;
-    public cucumber_steps(Environment environment) {
+    public Cucumber_steps(Environment environment) {
         this.environment = environment;
     }
 
@@ -27,7 +27,7 @@ public class cucumber_steps extends Environment {
         System.out.println("env StepInfo: "+ environment.StepInfo);
     }
 
-    @Given("^user goes to website \"([^\"]*)\"$")
+    @Given("^user goes to fake website \"([^\"]*)\"$")
     public void userGoesToFakeWebsite(String url) throws Throwable {
         System.out.println("url=" + url);
     }

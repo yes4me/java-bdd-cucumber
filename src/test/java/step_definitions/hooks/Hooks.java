@@ -20,7 +20,9 @@ public class Hooks extends Environment {
     @Before
     public void InitializeTest(Scenario scenario)
     {
-        System.out.println("** SCENARIO:" + scenario.getName());
+        System.out.println("** SCENARIO:" + scenario.getName() + "**");
+        System.out.println();
+
         environment.StepInfo = "Firefox driver";
     }
 

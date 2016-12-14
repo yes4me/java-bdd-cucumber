@@ -16,13 +16,12 @@ This document will show you how to:
 0. [Prerequisites](#Prerequisites)
 1. [Overview of packages](#Overview-of-packages)
 2. [Setup](#Setup)
-3. [WIP Checking the installation](#Checking-the-installation)
-4. [Running the program](#Running-the-program)
-5. [Uninstall](#Uninstall)
-6. [Known bugs](#Known-bugs)
-7. [Other notes](#Other-notes)
-8. [Definitions](#Definitions)
-9. [Sources](#Sources)
+3. [Running the program](#Running-the-program)
+4. [Uninstall](#Uninstall)
+5. [Known bugs](#Known-bugs)
+6. [Other notes](#Other-notes)
+7. [Definitions](#Definitions)
+8. [Sources](#Sources)
 
 ## Prerequisites
 ---
@@ -35,6 +34,7 @@ This document will show you how to:
 ---
 
 * cucumber-java: to run Cucumber
+* cucumber-java8: to use lambda expression, which simplify writing code  
 * cucumber-picocontainer: to inject code into Cucumber step definitions
 
 ## Setup
@@ -61,9 +61,6 @@ This document will show you how to:
     Gherkin
     Selenium
 
-## Checking the installation
----
-
 ## Running the program
 ---
 
@@ -71,7 +68,8 @@ This document will show you how to:
     * Go to: src\main\java\com\thomas\Main.java
     * Run 'Main' (SHIFT F10)
     * Result: Hello world
-2. Run Cucumber
+2. Run src\test\java\features\test_cucumber.feature
+3. Run src\test\java\features\test_cucumber8.feature
 
 ## Uninstall
 ---
@@ -121,7 +119,7 @@ To do:
     * [git](https://git-scm.com/)
     * [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
     * [Official Selenium HQ Drivers](http://www.seleniumhq.org/download/)
-    * [Maven repository](http://maven.apache.org)
+    * [Maven repository](https://mvnrepository.com/)
 
 * Tutorials:
 
