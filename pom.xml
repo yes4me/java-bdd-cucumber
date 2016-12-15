@@ -36,5 +36,10 @@
             <artifactId>cucumber-java8</artifactId>
             <version>1.2.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.0.1</version>
+        </dependency>
     </dependencies>
 </project>

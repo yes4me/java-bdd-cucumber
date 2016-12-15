@@ -6,7 +6,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import page_objects.User;
 import transformation.EmailTransform;
-import utils.Environment;
+import utils.BaseUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,17 +14,18 @@ import java.util.List;
 /**
  * Created by Thomas on 12/14/2016.
  */
-public class Cucumber_steps extends Environment {
-    private Environment environment;
-    public Cucumber_steps(Environment environment) {
-        this.environment = environment;
+public class Cucumber_steps extends BaseUtil {
+    // Defined only to show how to inject code into Cucumber step definitions
+    private BaseUtil baseUtil;
+    public Cucumber_steps(BaseUtil baseUtil) {
+        this.baseUtil = baseUtil;
     }
 
     // ==================================================
 
     @Given("^user goes to fake website$")
     public void userGoesToFakeWebsite() throws Throwable {
-        System.out.println("env StepInfo: "+ environment.StepInfo);
+        System.out.println("env StepInfo: "+ baseUtil.browser);
     }
 
     @Given("^user goes to fake website \"([^\"]*)\"$")

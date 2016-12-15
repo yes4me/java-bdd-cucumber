@@ -28,14 +28,15 @@ This document will show you how to:
 
 * Windows 8.1
 * Java Development Kit (JDK)
-* Integrated Development Environment (IDE): JetBrains IntelliJ IDEA 15.0
+* Integrated Development Environment(IDE): JetBrains IntelliJ IDEA 15.0
 
-## Overview of packages
+## Overview of packages (defined in pom.xml)
 ---
 
 * cucumber-java: to run Cucumber
 * cucumber-java8: to use lambda expression, which simplify writing code  
 * cucumber-picocontainer: to inject code into Cucumber step definitions
+* selenium-java: to run tests on the browser
 
 ## Setup
 ---
@@ -47,19 +48,12 @@ This document will show you how to:
     * Search for "Edit the System Environment Variables"":
         * System Variables/JAVA_HOME **is** "C:\Program Files\Java\jdk1.8.0_45"
         * System Variables/PATH **contains** "%JAVA_HOME%\bin"
-2. install an IDE
+2. install Intellij IDEA
     * Plugins: Cucumber for Java
+    * Build, Execution, Deployment > Compiler > Java Compiler: Target bytecode version = 1.8
 3. get the source code
     * install the package: git
     * `git clone <url>`
-4. JAR files
-    Cucumber-java
-
-    Cucumber-core
-    Cucumber-java-deps
-    Cucumber-jvm
-    Gherkin
-    Selenium
 
 ## Running the program
 ---
@@ -70,6 +64,7 @@ This document will show you how to:
     * Result: Hello world
 2. Run src\test\java\features\test_cucumber.feature
 3. Run src\test\java\features\test_cucumber8.feature
+4. Run src\test\java\features\test_selenium.feature
 
 ## Uninstall
 ---
@@ -100,14 +95,16 @@ To do:
 ## Definitions
 ---
 
+QA general definitions:
 * BDD = Behavior-Driven Development = tests to validate expected behavior (the test syntax can be read by anyone)
 * TDD = Test-Driven Development = API tests to test each unit of code
 * Unit Test = white box testing
-* white box test = software testing method in which the internal structure/ design/ implementation of the item being tested is known to the tester
 * black box test = software testing method in which the internal structure/ design/ implementation of the item being tested is NOT known to the tester
+* white box test = software testing method in which the internal structure/ design/ implementation of the item being tested is known to the tester
 * Gherkin = format for cucumber specification for the purpose of documentation and automated tests
 * Cucumber = popular tool to help write BDD
 
+Specific definitions to this framework:
 * glue = map the features to step definitions
 * step argument transformation ~ environment variable
 
@@ -127,6 +124,9 @@ To do:
     * [Tutorial in Java](https://www.tutorialspoint.com/java/java_regular_expressions.htm)
 
 * Inspirational codes:
+
+    * [Repository of Mr Karthik KK](https://github.com/executeautomation?tab=repositories)
+
 * Others:
 
     * [Regex](https://regex101.com/)
