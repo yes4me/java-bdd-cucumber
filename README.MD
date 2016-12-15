@@ -28,7 +28,7 @@ This document will show you how to:
 
 * Windows 8.1
 * Java Development Kit (JDK)
-* Integrated Development Environment(IDE): JetBrains IntelliJ IDEA 15.0
+* (optional) Integrated Development Environment(IDE): JetBrains IntelliJ IDEA 15.0
 
 ## Overview of packages (defined in pom.xml)
 ---
@@ -98,14 +98,22 @@ To do:
 ## Other notes
 ---
 
+Folders:
+* my_notes: some notes to help installing
+* src/main: Hello world!
+* src/test: source files (features, step definitions, page objects, etc...)
+* target: library needed to run, output
+* vendor: Selenium webdrivers
+
 Shortcuts for Intellij IDEA:
-* General
+
+1. General
     * CTRL + / = comment
-* Features:
+2. Features:
     * Alt + Return = create step definition for the selected feature
     * CTRL + left click = Read the corresponding step definition
     * CTRL + Alt + L = fix indentations
-* Classes:
+3. Classes:
     * ALT + Insert = auto generate codes (ex: constructor)
 
 ## Definitions
