@@ -33,14 +33,18 @@ This document will show you how to:
 ## Overview of packages (defined in pom.xml)
 ---
 
-* plugin/maven-compiler-plugin: to compile the sources of the project
-* plugin/maven-surefire-plugin: to generate reports in txt and xml formats
-* dependency/cucumber-java: to run Cucumber
-* dependency/cucumber-java8: to use lambda expression, which simplify writing code  
-* dependency/cucumber-picocontainer: to inject code into Cucumber step definitions
-* dependency/selenium-java: to run the browser
-* dependency/cucumber-junit: to run tests on cucumber
-* dependency/junit: to run tests on the browser
+1. Plugins
+    * maven-compiler-plugin: to compile the sources of the project
+    * maven-surefire-plugin: to generate reports in txt and xml formats
+2. Dependencies
+    * cucumber-java: to run Cucumber
+    * cucumber-java8: to use lambda expression, which simplify writing code  
+    * cucumber-picocontainer: to inject code into Cucumber step definitions
+    * selenium-java: to run the browser
+    * junit: to run JUnit tests on the browser
+    * cucumber-junit: to run JUnit tests on cucumber
+    * testng: to run TestNG tests on the browser
+    * cucumber-testng: to run TestNG tests on cucumber
 
 ## Setup
 ---
@@ -87,7 +91,6 @@ This document will show you how to:
 ---
 
 To do:
-* run the code from the command line using testRunner with RunWith attribute
 * DefaultPage.java & BasePage.java
 * Gradle > Maven
 * Take all the good codes from my other Java projects and include in this project 
