@@ -33,10 +33,11 @@ This document will show you how to:
 ## Overview of packages (defined in pom.xml)
 ---
 
-1. Plugins
+1. Plugins: do not trigger any compilation
     * maven-compiler-plugin: to compile the sources of the project
     * maven-surefire-plugin: to generate reports in txt and xml formats
-2. Dependencies
+    * cucumber-reporting: to generate reports in pretty graphics
+2. Dependencies: JAR files added to the classpath while compiling
     * cucumber-java: to run Cucumber
     * cucumber-java8: to use lambda expression, which simplify writing code  
     * cucumber-picocontainer: to inject code into Cucumber step definitions
@@ -92,8 +93,9 @@ This document will show you how to:
 
 To do:
 * DefaultPage.java & BasePage.java
-* Gradle > Maven
+* close browser after test
 * Take all the good codes from my other Java projects and include in this project 
+* Gradle > Maven
 
 ## Other notes
 ---
@@ -154,3 +156,4 @@ Specific definitions to this framework:
 * Others:
 
     * [Regex](https://regex101.com/)
+    * [Cucumber Reporting](https://github.com/damianszczepanik/cucumber-reporting)

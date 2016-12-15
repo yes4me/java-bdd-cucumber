@@ -23,7 +23,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 9743165362,
+  "duration": 10069668573,
   "status": "passed"
 });
 formatter.scenario({
@@ -59,7 +59,7 @@ formatter.match({
   "location": "Common_steps.java:22"
 });
 formatter.result({
-  "duration": 2901325973,
+  "duration": 4209298308,
   "status": "passed"
 });
 formatter.match({
@@ -80,7 +80,7 @@ formatter.match({
   "location": "Common_steps.java:25"
 });
 formatter.result({
-  "duration": 254885401,
+  "duration": 248275645,
   "status": "passed"
 });
 formatter.match({
@@ -97,11 +97,11 @@ formatter.match({
   "location": "Common_steps.java:29"
 });
 formatter.result({
-  "duration": 172115090,
+  "duration": 192734315,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15551211,
+  "duration": 43708030,
   "status": "passed"
 });
 });
