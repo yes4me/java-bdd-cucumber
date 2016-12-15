@@ -48,8 +48,8 @@ public class Hooks extends BaseUtil {
     {
         if (scenario.isFailed()) {
             System.out.println("** SCENARIO " + scenario.getName() + " FAILED! **");
+        } else {
+            baseUtil.driver.close();
         }
-//        driver.close();
-//        driver.quit();
     }
 }

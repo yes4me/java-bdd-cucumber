@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.TestRunner" time="78.09" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\bin"/>
+    <property name="java.vm.version" value="25.45-b02"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\save\thomas\job\computer\selenium_java\code"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\save\thomas\job\computer\selenium_java\code"/>
+    <property name="java.runtime.version" value="1.8.0_45-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Thomas\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.3.9\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_45\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Ruby21-x64\bin;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files\apache-maven-3.3.9\bin;C:\Program Files\gradle\bin;C:\Program Files\apache-ant-1.9.6\bin;C:\Program Files\nodejs\;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Ruby21-x64\bin;C:\Users\Thomas\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Thomas"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Thomas"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_45\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_45"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_45\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_45\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_45\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.3.9\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="Given user goes to fake website" classname="Scenario: [Test#1] Testing cucumber" time="0.003"/>
+  <testcase name="And user enters the following info" classname="Scenario: [Test#1] Testing cucumber" time="0"/>
+  <testcase name="Scenario: [Test#1] Testing cucumber" classname="Scenario: [Test#1] Testing cucumber" time="0.034"/>
+  <testcase name="Given user goes to fake website &quot;http://www.google.com&quot;" classname="| 1 | http://www.google.com |" time="0"/>
+  <testcase name="| 1 | http://www.google.com |" classname="| 1 | http://www.google.com |" time="0.224"/>
+  <testcase name="Given user goes to fake website &quot;http://www.microsoft.com&quot;" classname="| 2 | http://www.microsoft.com |" time="0"/>
+  <testcase name="| 2 | http://www.microsoft.com |" classname="| 2 | http://www.microsoft.com |" time="0.248"/>
+  <testcase name="Given user goes to fake website &quot;http://www.spacex.com&quot;" classname="| 3 | http://www.spacex.com |" time="0"/>
+  <testcase name="| 3 | http://www.spacex.com |" classname="| 3 | http://www.spacex.com |" time="0.189"/>
+  <testcase name="Given user goes to fake website" classname="Scenario: [Test#3] Test argument transformation in step definition" time="0"/>
+  <testcase name="And user enter the email address as &quot;thomas_ejob&quot;" classname="Scenario: [Test#3] Test argument transformation in step definition" time="0"/>
+  <testcase name="Scenario: [Test#3] Test argument transformation in step definition" classname="Scenario: [Test#3] Test argument transformation in step definition" time="0.18"/>
+  <testcase name="Given user test &quot;lambda expression&quot;" classname="Scenario: [Test#4] Testing lambda expression" time="0"/>
+  <testcase name="Scenario: [Test#4] Testing lambda expression" classname="Scenario: [Test#4] Testing lambda expression" time="0.39"/>
+  <testcase name="Given user goes to url &quot;http://www.google.com&quot;" classname="Scenario: [Test#5] Testing Selenium" time="0"/>
+  <testcase name="When user sets the &quot;search&quot; to be &quot;cat&quot; on the &quot;google&quot; page" classname="Scenario: [Test#5] Testing Selenium" time="0"/>
+  <testcase name="And user clicks on &quot;search&quot; on the &quot;google&quot; page" classname="Scenario: [Test#5] Testing Selenium" time="0"/>
+  <testcase name="Scenario: [Test#5] Testing Selenium" classname="Scenario: [Test#5] Testing Selenium" time="0.02"/>
+</testsuite>

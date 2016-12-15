@@ -25,14 +25,15 @@ public class Cucumber_steps extends BaseUtil {
 
     @Given("^user goes to fake website$")
     public void userGoesToFakeWebsite() throws Throwable {
-        System.out.println("env StepInfo: "+ baseUtil.browser);
+        System.out.println("user goes to a fake website");
     }
 
     @Given("^user goes to fake website \"([^\"]*)\"$")
     public void userGoesToFakeWebsite(String url) throws Throwable {
-        System.out.println("url=" + url);
+        System.out.println("user goes to the fake website: " + url);
     }
 
+    // How to access the DataTable
     @And("^user enters the following info$")
     public void userEntersTheFollowingInfo(DataTable table) throws Throwable {
 //        List<List<String>> data = table.raw();
@@ -49,6 +50,7 @@ public class Cucumber_steps extends BaseUtil {
         }
     }
 
+    // How to transform the data in the parameters
     @And("^user enter the email address as \"([^\"]*)\"$")
     public void userEnterTheEmailAddressAs(@Transform(EmailTransform.class) String email) throws Throwable {
         // @Transform will modify the parameters before using it

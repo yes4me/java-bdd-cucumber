@@ -33,27 +33,37 @@ This document will show you how to:
 ## Overview of packages (defined in pom.xml)
 ---
 
-* cucumber-java: to run Cucumber
-* cucumber-java8: to use lambda expression, which simplify writing code  
-* cucumber-picocontainer: to inject code into Cucumber step definitions
-* selenium-java: to run tests on the browser
+* plugin/maven-compiler-plugin: to compile the sources of the project
+* plugin/maven-surefire-plugin: to generate reports in txt and xml formats
+* dependency/cucumber-java: to run Cucumber
+* dependency/cucumber-java8: to use lambda expression, which simplify writing code  
+* dependency/cucumber-picocontainer: to inject code into Cucumber step definitions
+* dependency/selenium-java: to run the browser
+* dependency/cucumber-junit: to run tests on cucumber
+* dependency/junit: to run tests on the browser
 
 ## Setup
 ---
 
 1. install Java SDK
     * install [Java SDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 
-    * Console command: `java -version`
-    * Result: Display on the console 'java version "1.8.0_45"'
     * Search for "Edit the System Environment Variables"":
         * System Variables/JAVA_HOME **is** "C:\Program Files\Java\jdk1.8.0_45"
         * System Variables/PATH **contains** "%JAVA_HOME%\bin"
+    * Console command: `java -version`
+    * Result: Display on the console 'java version "1.8.0_45"'
 2. install Intellij IDEA
     * Plugins: Cucumber for Java
     * Build, Execution, Deployment > Compiler > Java Compiler: Target bytecode version = 1.8
 3. get the source code
     * install the package: git
     * `git clone <url>`
+4. Download and install the [Binary zip archive](https://maven.apache.org/download.cgi) of maven apache
+    * Search for "Edit the System Environment Variables"":
+        * System Variables/MAVEN_HOME **is** "C:\Program Files\apache-maven-3.3.9"
+        * System Variables/PATH **contains** "%MAVEN_HOME%\bin"
+    * Console command: `mvn -version`
+    * Result: Display on the console 'Apache Maven 3.3.9 ...'
 
 ## Running the program
 ---
@@ -62,9 +72,10 @@ This document will show you how to:
     * Go to: src\main\java\com\thomas\Main.java
     * Run 'Main' (SHIFT F10)
     * Result: Hello world
-2. Run src\test\java\features\test_cucumber.feature
-3. Run src\test\java\features\test_cucumber8.feature
-4. Run src\test\java\features\test_selenium.feature
+2. Run src\test\java\features\test_cucumber.feature from IntelliJ
+3. Run src\test\java\features\test_cucumber8.feature from IntelliJ
+4. Run src\test\java\features\test_selenium.feature from IntelliJ
+5. Console command: start.bat
 
 ## Uninstall
 ---
@@ -74,6 +85,12 @@ This document will show you how to:
 
 ## Known bugs
 ---
+
+To do:
+* run the code from the command line using testRunner with RunWith attribute
+* DefaultPage.java & BasePage.java
+* Gradle > Maven
+* Take all the good codes from my other Java projects and include in this project 
 
 ## Other notes
 ---
@@ -87,10 +104,6 @@ Shortcuts for Intellij IDEA:
     * CTRL + Alt + L = fix indentations
 * Classes:
     * ALT + Insert = auto generate codes (ex: constructor)
-
-To do:
-* run the code from the command line using testRunner with RunWith attribute
-* Gradle > Maven
 
 ## Definitions
 ---

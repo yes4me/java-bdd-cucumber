@@ -8,6 +8,10 @@ import cucumber.api.java8.En;
  */
 public class Cucumber8_steps implements En {
     public Cucumber8_steps() {
+
+        // ==================================================
+
+        // Testing Lambda
         Given("^user test \"([^\"]*)\"$", (String something) -> {
             System.out.println("Hello, " + something);
         });
