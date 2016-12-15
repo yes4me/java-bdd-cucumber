@@ -120,7 +120,7 @@ Specific definitions to this framework:
 
 * Tutorials:
 
-    * [Cucumber with Selenium Java (Basic)](https://www.udemy.com/cucumber-with-selenium/learn/v4/overview)
+    * [Cucumber with Selenium Java](https://www.udemy.com/cucumber-with-selenium/learn/v4/overview)
     * [Tutorial in Java](https://www.tutorialspoint.com/java/java_regular_expressions.htm)
 
 * Inspirational codes:
