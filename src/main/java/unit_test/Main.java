@@ -5,12 +5,12 @@ Date started: 2016/12/15
 Last update: 2016/12/15
  */
 
-package com.thomas;
+package unit_test;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class JUnitTest {
+public class Main {
 
     @Test
     public void test() throws Exception {

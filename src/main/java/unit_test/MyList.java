@@ -5,7 +5,7 @@ Date started: 2016/12/15
 Last update: 2016/12/15
 */
 
-package com.thomas;
+package unit_test;
 
 public final class MyList {
     private int[] list;
@@ -40,7 +40,7 @@ public final class MyList {
         } else {
             result = new int[] {myArray[1], myArray[0]};
         }
-        for (int i=2; i<myArray.length; i++) {
+        for (int i=2, size=myArray.length; i<size; i++) {
             if (result[1] < myArray[i]) {
                 // highest and second highest values need to be updated
                 result[0] = result[1];
@@ -56,7 +56,7 @@ public final class MyList {
     // Print array
     public void printArray(int[] myArray) {
         System.out.println("Printing the array:");
-        for (int i=0; i<myArray.length; i++) {
+        for (int i=0, size=myArray.length; i<size; i++) {
             System.out.println("index " + i +": "+ myArray[i]);
         }
     }
