@@ -6,9 +6,10 @@
 
 Source: http://www.javacreed.com/comparing-the-performance-of-various-list-implementations/
 Result: 2016/12/16, Java 1.8
-    APPEND :	1.0788560225930386
-    INSERT :	0.18371575713139185
-    REVERSE:	0.2353250440037923
+    APPEND :	1.175199870554452
+    INSERT :	0.18063393332252423
+    REVERSE:	0.22040319617441886
+    GET SIZE:	0.9435047402486113
 Conclusion:
     StringBuffer  is better for: INSERT, REVERSE
     StringBuilder is better for: APPEND
@@ -24,49 +25,26 @@ public class Main {
         final int NUMBER_TEST  = 20000;
         PerformanceString performanceString = new PerformanceString();
 
-        double timerStringBuffer1   = 0;
-        double timerStringBuffer2   = 0;
-        double timerStringBuffer3   = 0;
-        double timerStringBuilder1  = 0;
-        double timerStringBuilder2  = 0;
-        double timerStringBuilder3  = 0;
+        // append = add strings at the end
+        double timerStringBuffer1  = performanceString.stringBufferTestAppend(NUMBER_TEST);
+        double timerStringBuilder1 = performanceString.stringBuilderTestAppend(NUMBER_TEST);
 
-        // StringBuffer append = add strings at the end
-        timerStringBuffer1 = performanceString.stringBufferTestAppend(NUMBER_TEST);
-        // timerStringBuffer1 /= NUMBER_TEST;
-        // System.out.println("StringBuffer append:\t"+ timerStringBuffer1 );
+        // insert = add strings wherever you want
+        double timerStringBuffer2  = performanceString.stringBufferTestInsert(NUMBER_TEST);
+        double timerStringBuilder2 = performanceString.stringBuilderTestInsert(NUMBER_TEST);
 
-        // StringBuilder append = add strings at the end
-        timerStringBuilder1 = performanceString.stringBuilderTestAppend(NUMBER_TEST);
-        // timerStringBuilder1 /= NUMBER_TEST;
-        // System.out.println("StringBuilder append:\t"+ timerStringBuilder1 );
+        // reverse
+        double timerStringBuffer3  = performanceString.stringBufferTestReverse(NUMBER_TEST);
+        double timerStringBuilder3 = performanceString.stringBuilderTestReverse(NUMBER_TEST);
 
-
-        // StringBuffer insert = add strings wherever you want
-        timerStringBuffer2 = performanceString.stringBufferTestInsert(NUMBER_TEST);
-        // timerStringBuffer2 /= NUMBER_TEST;
-        // System.out.println("StringBuffer insert:\t"+ timerStringBuffer2 );
-
-        // StringBuilder insert = add strings at the end
-        timerStringBuilder2 = performanceString.stringBuilderTestInsert(NUMBER_TEST);
-        // timerStringBuilder2 /= NUMBER_TEST;
-        // System.out.println("StringBuilder insert:\t"+ timerStringBuilder2 );
-
-
-        // StringBuffer reverse
-        timerStringBuffer3 = performanceString.stringBufferTestReverse(NUMBER_TEST);
-        // timerStringBuffer3 /= NUMBER_TEST;
-        // System.out.println("StringBuffer insert:\t"+ timerStringBuffer3 );
-
-        // StringBuilder reverse
-        timerStringBuilder3 = performanceString.stringBuilderTestReverse(NUMBER_TEST);
-        // timerStringBuilder3 /= NUMBER_TEST;
-        // System.out.println("StringBuilder insert:\t"+ timerStringBuilder3 );
-
+        // get the size
+        double timerStringBuffer4  = performanceString.stringBufferTestLength(NUMBER_TEST);
+        double timerStringBuilder4 = performanceString.stringBuilderTestLength(NUMBER_TEST);
 
         System.out.println("StringBuffer vs StringBuilder:");
         System.out.println("APPEND :\t"+ timerStringBuffer1/timerStringBuilder1 );
         System.out.println("INSERT :\t"+ timerStringBuffer2/timerStringBuilder2 );
         System.out.println("REVERSE:\t"+ timerStringBuffer3/timerStringBuilder3 );
+        System.out.println("GET SIZE:\t"+ timerStringBuffer4/timerStringBuilder4 );
     }
 }

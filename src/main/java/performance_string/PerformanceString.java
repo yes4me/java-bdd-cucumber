@@ -39,7 +39,6 @@ public final class PerformanceString {
         return System.nanoTime() - start;
     }
 
-
     // Testing REVERSE
     public long stringBufferTestReverse(int limit) {
         final long start = System.nanoTime();
@@ -52,6 +51,22 @@ public final class PerformanceString {
         final long start = System.nanoTime();
         for (int i=0, size=limit; i<size ;i++) {
             stringBuilder.reverse();
+        }
+        return System.nanoTime() - start;
+    }
+
+    // Testing GETTING SIZE
+    public long stringBufferTestLength(int limit) {
+        final long start = System.nanoTime();
+        for (int i=0, size=limit; i<size ;i++) {
+            stringBuffer.length();
+        }
+        return System.nanoTime() - start;
+    }
+    public long stringBuilderTestLength(int limit) {
+        final long start = System.nanoTime();
+        for (int i=0, size=limit; i<size ;i++) {
+            stringBuilder.length();
         }
         return System.nanoTime() - start;
     }
