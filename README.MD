@@ -27,8 +27,8 @@ This document will show you how to:
 ## Introduction
 ---
 
-I would appreciate if you contact me after finding ways to improve the code.
-Thank you in advance.
+Feel free to let me know ways to improve the code.
+Thank you in advance. 
 
 Thomas Nguyen, thomas_ejob@hotmail.com
 https://www.linkedin.com/in/thomasquang
@@ -105,7 +105,6 @@ To do:
 * DefaultPage.java & BasePage.java
 * close browser after test
 * Take all the good codes from my other Java projects and include in this project 
-* Gradle > Maven
 
 ## Other notes
 ---
