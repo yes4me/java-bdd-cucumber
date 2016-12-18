@@ -1,17 +1,15 @@
 /**
- * Created by Thomas on 12/16/2016.
- * Asked on 2016/12/16
+ * Author: Thomas Nguyen
+ * Date created: 2016/12/16
+ * Interview date: 2016/12/16
+ *
  * NOTES:
  * - String: read only and immutable => EASY TO DEFINE. NO MANIPULATION
  * - StringBuffer: mutable, synchronized (=thread safe) => FASTER than String, OLD WAY
  * - StringBuilder:mutable                              => FASTER than StringBuffer
  */
 
-package interview_qa;
-
-import org.apache.commons.lang3.ArrayUtils;
-
-import java.util.Arrays;
+package interview_normal;
 
 public class ReverseString {
     public static String reverseText1(String text) {

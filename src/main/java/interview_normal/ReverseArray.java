@@ -1,9 +1,10 @@
 /**
- * Created by Thomas on 12/16/2016.
- * Asked on 2014/07/31
+ * Author: Thomas Nguyen
+ * Date created: 2016/12/16
+ * Interview date: 2014/07/31
  */
 
-package interview_qa;
+package interview_normal;
 
 import org.apache.commons.lang3.ArrayUtils;
 

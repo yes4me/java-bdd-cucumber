@@ -1,18 +1,18 @@
 /*
- * Created by Thomas on 12/16/2016.
- * Asked on 2016/12/16
+ * Author: Thomas Nguyen
+ * Date created: 2016/12/16
  *
  * Insertion sort:
  * - Keep the left side in order as it keeps checking one item at the time (n x n)
  * - complexity = n(n-1)/2 AT WORST
   * - Bubble sort < Selection sort < Insertion sort
 */
-package interview_qa;
+package interview_normal;
 
 import java.util.Arrays;
 
 public class SortInsert {
-    public static int[] insertSort(int[] myArray) {
+    public static int[] sort(int[] myArray) {
         if (myArray.length < 2) {
             return myArray;
         }
@@ -30,9 +30,9 @@ public class SortInsert {
         return myArray;
     }
     public static void main(String [] args) {
-        int[] myArray = {5,3,4,1,2};
+        int[] myArray = {5,2,3,1,2};
 
-        myArray = insertSort(myArray);
+        myArray = sort(myArray);
         System.out.println("insert sort: "+ Arrays.toString(myArray));
     }
 }

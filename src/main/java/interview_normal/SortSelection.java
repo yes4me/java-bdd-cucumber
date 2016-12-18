@@ -1,18 +1,19 @@
 /*
- * Created by Thomas on 12/16/2016.
- * Asked on 2016/12/16
+ * Purpose: Comparing ArrayList and LinkedList
+ * Author: Thomas Nguyen
+ * Date created: 2016/12/16
  *
  * Selection sort:
  * - Look at the smallest value and put it in the first position and so on
  * - complexity = n(n-1)/2 ALWAYS
   * - Bubble sort < Selection sort < Insertion sort
 */
-package interview_qa;
+package interview_normal;
 
 import java.util.Arrays;
 
 public class SortSelection {
-    public static int[] selectionSort(int[] myArray) {
+    public static int[] sort(int[] myArray) {
         if (myArray.length < 2) {
             return myArray;
         }
@@ -35,9 +36,9 @@ public class SortSelection {
         return myArray;
     }
     public static void main(String [] args) {
-        int[] myArray = {5,3,4,1,2};
+        int[] myArray = {5,2,3,1,2};
 
-        myArray = selectionSort(myArray);
+        myArray = sort(myArray);
         System.out.println("selection sort: "+ Arrays.toString(myArray));
     }
 }

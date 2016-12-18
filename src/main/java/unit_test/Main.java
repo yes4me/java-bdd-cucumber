@@ -1,8 +1,8 @@
 /*
-Purpose: Unit test to validate the implementation of MyList.java
-Author: Thomas Nguyen
-Date started: 2016/12/15
-Last update: 2016/12/15
+ * Purpose: Unit test to validate the implementation of MyList.java
+ * Author: Thomas Nguyen
+ * Date created: 2016/12/15
+ * Interview date: 2016/12/15
  */
 
 package unit_test;

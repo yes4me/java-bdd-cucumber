@@ -4,7 +4,7 @@
 ---
 
 * Purpose: End-to-End tests for UI testing on Windows
-* Author: Thomas Nguyen
+* Author: Thomas Nguyen, thomas_ejob@hotmail.com
 * Date started: 2016/12/13
 * Last update: 2016/12/14
 
@@ -13,15 +13,25 @@
 
 This document will show you how to:
 
-0. [Prerequisites](#Prerequisites)
-1. [Overview of packages](#Overview-of-packages)
-2. [Setup](#Setup)
-3. [Running the program](#Running-the-program)
-4. [Uninstall](#Uninstall)
-5. [Known bugs](#Known-bugs)
-6. [Other notes](#Other-notes)
-7. [Definitions](#Definitions)
-8. [Sources](#Sources)
+0. [Introduction](#Introduction)
+1. [Prerequisites](#Prerequisites)
+2. [Overview of packages](#Overview-of-packages)
+3. [Setup](#Setup)
+4. [Running the program](#Running-the-program)
+5. [Uninstall](#Uninstall)
+6. [Known bugs](#Known-bugs)
+7. [Other notes](#Other-notes)
+8. [Definitions](#Definitions)
+9. [Sources](#Sources)
+
+## Introduction
+---
+
+I would appreciate if you contact me after finding ways to improve the code.
+Thank you in advance.
+
+Thomas Nguyen, thomas_ejob@hotmail.com
+https://www.linkedin.com/in/thomasquang
 
 ## Prerequisites
 ---

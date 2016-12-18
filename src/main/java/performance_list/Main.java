@@ -1,8 +1,7 @@
 /*
 * Purpose: Comparing ArrayList and LinkedList
-* Author: Thomas Nguyen
-* Date started: 2016/12/16
-* Last update: 2016/12/16
+ * Author: Thomas Nguyen
+ * Date created: 2016/12/16
 
 Source: http://www.javacreed.com/comparing-the-performance-of-various-list-implementations/
 Result: 2016/12/16
