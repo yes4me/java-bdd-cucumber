@@ -25,7 +25,7 @@ public class ReverseArray {
         return result;
     }
 
-    // Permute all the data into a different array (version1)
+    // Permute all the data into a DIFFERENT array (version1)
     public static int[] reverseArray2(int[] array) {
         int arraySize	= array.length;
         int[] result    = new int[arraySize];
@@ -35,7 +35,7 @@ public class ReverseArray {
         return result;
     }
 
-    // Permute all the data into a different array (version2)
+    // Permute all the data into a DIFFERENT array (version2)
     public static int[] reverseArray3(int[] array) {
         int arraySize	= array.length;
         int[] result    = new int[arraySize];

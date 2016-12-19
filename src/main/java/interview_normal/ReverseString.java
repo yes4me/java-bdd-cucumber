@@ -13,23 +13,22 @@ package interview_normal;
 
 public class ReverseString {
     public static String reverseText1(String text) {
-        // String instances are immutable. Therefore we need result
-        String result   = "";
-        int size        = text.length();
+        // String instances are immutable. Therefore we need another string to hold the result
 
-        for (int i=0; i<size; i++) {
+        String result   = "";
+        for (int i=0, size=text.length(); i<size; i++) {
             result += text.charAt(size-i-1);
         }
         return result;
     }
 
-    public static String reverseText2(String text) {
+    public static String reverseText_buffer(String text) {
         // String instances are immutable => use StringBuffer
         StringBuffer result = new StringBuffer(text);
         return result.reverse().toString();
     }
 
-    public static String reverseText3(String text) {
+    public static String reverseText_builder(String text) {
         // String instances are immutable => use StringBuilder or...
         StringBuilder result = new StringBuilder(text);
         return result.reverse().toString();
@@ -43,11 +42,11 @@ public class ReverseString {
         System.out.println(text);
 
         // Using StringBuffer
-        text = reverseText2(text);
+        text = reverseText_buffer(text);
         System.out.println(text);
 
         // Using Stringbuilder
-        text = reverseText3(text);
+        text = reverseText_builder(text);
         System.out.println(text);
     }
 }

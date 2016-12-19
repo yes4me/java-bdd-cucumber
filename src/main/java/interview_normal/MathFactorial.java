@@ -31,7 +31,7 @@ public class MathFactorial {
     public static void main(String [] args) {
         final int NUMBER  = 50;
         long time1=0, time2=0;
-        long start = 0;
+        long start=0;
 
         start = System.nanoTime();
         double result1 = factorial_v1(NUMBER);

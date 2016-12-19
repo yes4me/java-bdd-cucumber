@@ -57,7 +57,7 @@ public final class MyList {
     public void printArray(int[] myArray) {
         System.out.println("Printing the array:");
         for (int i=0, size=myArray.length; i<size; i++) {
-            System.out.println("index " + i +": "+ myArray[i]);
+            System.out.println("index:" + i +"\t-> value="+ myArray[i]);
         }
     }
 }
