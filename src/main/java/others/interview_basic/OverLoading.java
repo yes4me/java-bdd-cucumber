@@ -11,7 +11,7 @@ package others.interview_basic;
  */
 public class OverLoading {
     public OverLoading() {
-        System.out.println("Constructor");
+        this("N/A");
     }
     public OverLoading(String text) {
         System.out.println("Constructor: "+ text);

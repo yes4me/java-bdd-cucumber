@@ -4,11 +4,15 @@ import com.thomas.base.Base;
 import com.thomas.base.BrowserList;
 import com.thomas.base.DriverContext;
 import com.thomas.base.FrameworkInitialize;
+import com.thomas.utilities.ExcelUtil;
+import jxl.read.biff.BiffException;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import page_objects.HomePage;
 import page_objects.LoginPage;
+
+import java.io.IOException;
 
 /**
  * Created by Thomas on 12/19/2016.
@@ -20,6 +24,14 @@ public class LoginTest extends FrameworkInitialize {
         //Open the browser
         InitializeBrowser(BrowserList.Firefox);
         DriverContext.getBrowser().goUrl("http://executeautomation.com/demosite/Login.html");
+
+        try {
+            ExcelUtil excelUtil = new ExcelUtil("C:\\data.xls");
+        } catch (BiffException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
@@ -40,5 +52,13 @@ public class LoginTest extends FrameworkInitialize {
         Thread.sleep(1000);
         currentPage.As(HomePage.class).setFirstName("firstname");
         currentPage.As(HomePage.class).setMiddleName("middlename");
+
+        // Testing ExcelUtil
+//        System.out.println("rowcount:" + ExcelUtil.rowCount() );
+//        System.out.println("colcount:" + ExcelUtil.colCount() );
+//        System.out.println("==>-1:" + ExcelUtil.getCell("Password", -1));
+//        System.out.println("==>0:" + ExcelUtil.getCell("Password", 0));
+//        System.out.println("==>1:" + ExcelUtil.getCell("Password", 2));
+//        System.out.println("==>2:" + ExcelUtil.getCell("password", 2));
     }
 }

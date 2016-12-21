@@ -56,6 +56,7 @@ https://www.linkedin.com/in/thomasquang
     * selenium-java: to run the browser
     * junit: to run JUnit tests on the browser
     * TestNG: to run TestNG tests on the browser
+    * jxl: for Excel library
 
 ## Setup
 ---
@@ -134,6 +135,7 @@ Shortcuts for Intellij IDEA:
 QA general definitions:
 * BDD = Behavior-Driven Development = same as TDD, and also aims to make the test syntax readable by anyone (using Cucumber)
 * TDD = Test-Driven Development = tests to validate expected behavior
+* Data Driven Testing: using data sources (ex: XML, Excel sheets, Database Tables) 
 * Gherkin = language specification for Cucumber for the purpose of documentation and automated tests
 * black box test = software testing method in which the internal structure/ design/ implementation of the item being tested is NOT known to the tester
 * white box test = software testing method in which the internal structure/ design/ implementation of the item being tested is known to the tester
@@ -157,10 +159,11 @@ Specific definitions to this framework:
 * Tutorials:
 
     * [Java](https://www.tutorialspoint.com/java/java_regular_expressions.htm)
-    * [Java File Organization](https://web.archive.org/web/20130516014426/http://www.oracle.com/technetwork/java/codeconventions-141855.html#1852)
-    * [Java Generics](https://www.tutorialspoint.com/java/java_generics.htm)
+    * [Java: File Organization](https://web.archive.org/web/20130516014426/http://www.oracle.com/technetwork/java/codeconventions-141855.html#1852)
+    * [Java: Generics](https://www.tutorialspoint.com/java/java_generics.htm)
     * [Java: Automation framework with Selenium (Basic)](https://www.udemy.com/cucumber-with-selenium/learn/v4/overview)
     * [Java: Automation framework with Selenium (Advanced)](https://www.udemy.com/automation-framework-with-selenium/learn/v4/content)
+    * [Java: xls file parsing](http://executeautomation.com/blog/data-driven-testing-in-selenium-using-jxl-part-1.2/)
 
 * Inspirational codes:
 
