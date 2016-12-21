@@ -26,7 +26,7 @@ public class LoginTest extends FrameworkInitialize {
         DriverContext.getBrowser().goUrl("http://executeautomation.com/demosite/Login.html");
 
         try {
-            ExcelUtil excelUtil = new ExcelUtil("C:\\data.xls");
+            ExcelUtil excelUtil = new ExcelUtil("login.xls");
         } catch (BiffException e) {
             e.printStackTrace();
         } catch (IOException e) {

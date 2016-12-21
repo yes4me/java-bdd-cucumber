@@ -5,6 +5,7 @@
 
 package com.thomas.utilities;
 
+import com.thomas.config.Paths;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
@@ -26,6 +27,8 @@ public class ExcelUtil {
         this(excelFilename, 0);
     }
     public ExcelUtil(String excelFilename, int index) throws BiffException, IOException {
+        excelFilename = Paths.getDataPath(excelFilename);
+
         //Initialize
         workbook = Workbook.getWorkbook(new File(excelFilename));
 
@@ -36,6 +39,8 @@ public class ExcelUtil {
         initHeaderMap();
     }
     public ExcelUtil(String excelFilename, String title) throws BiffException, IOException {
+        excelFilename = Paths.getDataPath(excelFilename);
+
         //Initialize
         workbook = Workbook.getWorkbook(new File(excelFilename));
 
