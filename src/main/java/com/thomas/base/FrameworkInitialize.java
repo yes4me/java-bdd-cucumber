@@ -1,5 +1,6 @@
 package com.thomas.base;
 
+import com.thomas.config.Paths;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,7 +20,8 @@ public class FrameworkInitialize extends Base {
             }
             case Firefox: {
                 //Open the browser
-                System.setProperty("webdriver.gecko.driver", "C:\\geckodriver-v0.11.1.exe");
+                //System.setProperty("webdriver.gecko.driver", "C:\\geckodriver-v0.11.1.exe");
+                System.setProperty("webdriver.gecko.driver", Paths.getVendorPath("geckodriver-v0.11.1.exe"));
                 driver= new FirefoxDriver();
                 break;
             }

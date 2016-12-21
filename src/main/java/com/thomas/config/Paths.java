@@ -6,20 +6,23 @@ import java.io.File;
  * Created by Thomas on 12/21/2016.
  */
 public class Paths {
-    // ==> C:\save\thomas\job\computer\selenium_java\code
-    private final static String PATH_BASE = new File("").getAbsolutePath();
-
-    public static String getBasePath() {
-        return PATH_BASE;
+    private static String getFullPath(String path, String filename) {
+        StringBuilder path_file = new StringBuilder();
+        path_file.append(path).append("\\").append(filename);
+        return path_file.toString();
     }
+
     public static String getDataPath() {
-        String path_xls = new File("src/test/java/data/").getAbsolutePath();
-        return path_xls;
+        return new File("src/test/java/data/").getAbsolutePath();
     }
     public static String getDataPath(String file) {
-        String path_xls = getDataPath();
-        StringBuilder path_file = new StringBuilder();
-        path_file.append(path_xls).append("\\").append(file);
-        return path_file.toString();
+        return getFullPath(getDataPath(), file);
+    }
+
+    public static String getVendorPath() {
+        return new File("vendor/").getAbsolutePath();
+    }
+    public static String getVendorPath(String file) {
+        return getFullPath(getVendorPath(), file);
     }
 }

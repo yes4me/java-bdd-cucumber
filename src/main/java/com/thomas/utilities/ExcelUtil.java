@@ -59,8 +59,7 @@ public class ExcelUtil {
     private static void initHeaderMap()
     {
         //Iterate through all the columns in the Excel sheet and store the value in Hashtable
-        for(int col=0; col<colCount(); col++) {
-            System.out.println("col="+col + "/" + getCell(col,0));
+        for(int col=0; col<getColCount(); col++) {
             headerMap.put(getCell(col,0), col);
         }
     }
@@ -81,11 +80,11 @@ public class ExcelUtil {
     // =============================================================================================
 
     //Returns the number of (vertical) rows
-    public static int rowCount() {
+    public static int getRowCount() {
         return worksheet.getRows();
     }
     //Returns the number of (horizontal) columns
-    public static int colCount() {
+    public static int getColCount() {
         return worksheet.getColumns();
     }
 

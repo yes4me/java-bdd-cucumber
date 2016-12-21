@@ -25,6 +25,7 @@ public class LoginTest extends FrameworkInitialize {
         InitializeBrowser(BrowserList.Firefox);
         DriverContext.getBrowser().goUrl("http://executeautomation.com/demosite/Login.html");
 
+        // Data Driven Test: Open an Excel file to get all username/password
         try {
             ExcelUtil excelUtil = new ExcelUtil("login.xls");
         } catch (BiffException e) {
@@ -54,8 +55,8 @@ public class LoginTest extends FrameworkInitialize {
         currentPage.As(HomePage.class).setMiddleName("middlename");
 
         // Testing ExcelUtil
-//        System.out.println("rowcount:" + ExcelUtil.rowCount() );
-//        System.out.println("colcount:" + ExcelUtil.colCount() );
+//        System.out.println("rowcount:" + ExcelUtil.getRowCount() );
+//        System.out.println("colcount:" + ExcelUtil.getColCount() );
 //        System.out.println("==>-1:" + ExcelUtil.getCell("Password", -1));
 //        System.out.println("==>0:" + ExcelUtil.getCell("Password", 0));
 //        System.out.println("==>1:" + ExcelUtil.getCell("Password", 2));
