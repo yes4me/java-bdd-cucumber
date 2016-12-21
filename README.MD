@@ -51,11 +51,11 @@ https://www.linkedin.com/in/thomasquang
     * cucumber-java: to run Cucumber
     * cucumber-java8: to use lambda expression, which simplify writing code  
     * cucumber-picocontainer: to inject code into Cucumber step definitions
+    * cucumber-junit: to run JUnit tests on cucumber
+    * cucumber-testng: to run TestNG tests on cucumber
     * selenium-java: to run the browser
     * junit: to run JUnit tests on the browser
-    * cucumber-junit: to run JUnit tests on cucumber
-    * testng: to run TestNG tests on the browser
-    * cucumber-testng: to run TestNG tests on cucumber
+    * TestNG: to run TestNG tests on the browser
 
 ## Setup
 ---
@@ -102,6 +102,7 @@ https://www.linkedin.com/in/thomasquang
 ---
 
 To do:
+* Remove the driver from C: (ex: C:\geckodriver-v0.11.1.exe)
 * DefaultPage.java & BasePage.java
 * close browser after test
 * Take all the good codes from my other Java projects and include in this project 
@@ -131,12 +132,12 @@ Shortcuts for Intellij IDEA:
 ---
 
 QA general definitions:
-* BDD = Behavior-Driven Development = tests to validate expected behavior (the test syntax can be read by anyone)
-* TDD = Test-Driven Development = API tests to test each unit of code
-* Unit Test = white box testing
+* BDD = Behavior-Driven Development = same as TDD, and also aims to make the test syntax readable by anyone (using Cucumber)
+* TDD = Test-Driven Development = tests to validate expected behavior
+* Gherkin = language specification for Cucumber for the purpose of documentation and automated tests
 * black box test = software testing method in which the internal structure/ design/ implementation of the item being tested is NOT known to the tester
 * white box test = software testing method in which the internal structure/ design/ implementation of the item being tested is known to the tester
-* Gherkin = format for cucumber specification for the purpose of documentation and automated tests
+* Unit Test = white box testing on the code
 * Cucumber = popular tool to help write BDD
 
 Specific definitions to this framework:
@@ -155,8 +156,11 @@ Specific definitions to this framework:
 
 * Tutorials:
 
-    * [Cucumber with Selenium Java](https://www.udemy.com/cucumber-with-selenium/learn/v4/overview)
-    * [Tutorial in Java](https://www.tutorialspoint.com/java/java_regular_expressions.htm)
+    * [Java](https://www.tutorialspoint.com/java/java_regular_expressions.htm)
+    * [Java File Organization](https://web.archive.org/web/20130516014426/http://www.oracle.com/technetwork/java/codeconventions-141855.html#1852)
+    * [Java Generics](https://www.tutorialspoint.com/java/java_generics.htm)
+    * [Java: Automation framework with Selenium (Basic)](https://www.udemy.com/cucumber-with-selenium/learn/v4/overview)
+    * [Java: Automation framework with Selenium (Advanced)](https://www.udemy.com/automation-framework-with-selenium/learn/v4/content)
 
 * Inspirational codes:
 
