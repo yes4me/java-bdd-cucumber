@@ -1,7 +1,5 @@
 package others.basic_knowledge;
 
-import java.util.Arrays;
-
 /**
  * Created by Thomas on 12/21/2016.
  */
