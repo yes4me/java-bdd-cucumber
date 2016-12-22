@@ -12,6 +12,7 @@ import others.utils.BaseUtil;
  */
 public class Hooks extends BaseUtil {
     private BaseUtil baseUtil;
+
     public Hooks(BaseUtil baseUtil) {
         this.baseUtil = baseUtil;
     }
@@ -20,14 +21,13 @@ public class Hooks extends BaseUtil {
 
     // @Before is like BeforeScenario
     @Before
-    public void InitializeTest(Scenario scenario)
-    {
+    public void InitializeTest(Scenario scenario) {
         // Defined only to show how to inject code into CucumberUtil step definitions
         baseUtil.browser = "Firefox";
 
         // Setup: Firefox
-        System.setProperty("webdriver.gecko.driver","C:\\geckodriver-v0.11.1.exe");
-        DesiredCapabilities capabilities=DesiredCapabilities.firefox();
+        System.setProperty("webdriver.gecko.driver", "C:\\geckodriver-v0.11.1.exe");
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         capabilities.setCapability("marionette", true);
         baseUtil.driver = new FirefoxDriver(capabilities);
         //driver.navigate().to("http://www.google.com");
@@ -42,8 +42,7 @@ public class Hooks extends BaseUtil {
 
     // @After is like AfterScenario
     @After
-    public void CompleteTest(Scenario scenario)
-    {
+    public void CompleteTest(Scenario scenario) {
         if (scenario.isFailed()) {
             System.out.println("** SCENARIO " + scenario.getName() + " FAILED! **");
         } else {

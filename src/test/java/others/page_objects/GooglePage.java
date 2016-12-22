@@ -10,8 +10,10 @@ import org.openqa.selenium.support.PageFactory;
  * Created by Thomas on 12/14/2016.
  */
 public class GooglePage {
-    @FindBy(how = How.NAME, using = "q") private WebElement searchField;
-    @FindBy(how = How.NAME, using = "btnG") private WebElement searchButton;
+    @FindBy(how = How.NAME, using = "q")
+    private WebElement searchField;
+    @FindBy(how = How.NAME, using = "btnG")
+    private WebElement searchButton;
 
     public GooglePage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -20,6 +22,7 @@ public class GooglePage {
     public void setSearch(String text) {
         searchField.sendKeys(text);
     }
+
     public void searchForm() {
         searchButton.click();
     }

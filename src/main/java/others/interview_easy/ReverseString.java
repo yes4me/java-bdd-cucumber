@@ -2,22 +2,22 @@
  * Author: Thomas Nguyen
  * Date created: 2016/12/16
  * Interview date: 2016/12/16
- *
+ * <p>
  * NOTES:
  * - String: read only and immutable => EASY TO DEFINE. NO MANIPULATION
  * - StringBuffer: mutable, synchronized (=thread safe) => FASTER than String, OLD WAY
  * - StringBuilder:mutable                              => FASTER than StringBuffer
  */
 
-package others.interview_normal;
+package others.interview_easy;
 
 public class ReverseString {
     public static String reverseText1(String text) {
         // String instances are immutable. Therefore we need another string to hold the result
 
-        String result   = "";
-        for (int i=0, size=text.length(); i<size; i++) {
-            result += text.charAt(size-i-1);
+        String result = "";
+        for (int i = 0, size = text.length(); i < size; i++) {
+            result += text.charAt(size - i - 1);
         }
         return result;
     }
@@ -34,7 +34,7 @@ public class ReverseString {
         return result.reverse().toString();
     }
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         String text = "Hello world";
 
         // Using String

@@ -2,7 +2,7 @@
  * Author: Thomas Nguyen
  * Date created: 2016/12/18
  * Interview date: 2016/12/18
- *
+ * <p>
  * prints the numbers from 1 to 100
  * for multiples:
  * - of 3, print “Fizz” instead of the number
@@ -10,7 +10,7 @@
  * - of 3 and 5, print “FizzBuzz”.
  */
 
-package others.interview_normal;
+package others.interview_easy;
 
 public class Fizzbuzz {
     public static String fizzbuzz(int number) {
@@ -21,11 +21,12 @@ public class Fizzbuzz {
         if (number % 5 == 0) {
             result += "Buzz";
         }
-        return (result=="")? Integer.toString(number) : result;
+        return (result == "") ? Integer.toString(number) : result;
     }
-    public static void main(String [] args) {
-        for (int i=1; i<=100; i++) {
-            System.out.println(i +": "+ fizzbuzz(i));
+
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i + ": " + fizzbuzz(i));
         }
     }
 }

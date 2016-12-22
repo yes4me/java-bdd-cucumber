@@ -17,22 +17,23 @@ public class SortInsert {
             return myArray;
         }
 
-        for (int newIndex=1, size=myArray.length; newIndex<size; newIndex++) {
-            int newValue    = myArray[newIndex];
-            int i           = newIndex-1;
+        for (int newIndex = 1, size = myArray.length; newIndex < size; newIndex++) {
+            int newValue = myArray[newIndex];
+            int i = newIndex - 1;
 
-            for (; i>=0 && myArray[i]>newValue; i--) {
-                myArray[i+1] = myArray[i];
+            for (; i >= 0 && myArray[i] > newValue; i--) {
+                myArray[i + 1] = myArray[i];
             }
             // We have to update myArray[i+1] because the for loop ends by removing 1 from i
-            myArray[i+1] = newValue;
+            myArray[i + 1] = newValue;
         }
         return myArray;
     }
-    public static void main(String [] args) {
-        int[] myArray = {5,2,3,1,2};
+
+    public static void main(String[] args) {
+        int[] myArray = {5, 2, 3, 1, 2};
 
         myArray = sort(myArray);
-        System.out.println("insert sort: "+ Arrays.toString(myArray));
+        System.out.println("insert sort: " + Arrays.toString(myArray));
     }
 }

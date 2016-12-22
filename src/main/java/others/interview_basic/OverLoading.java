@@ -13,7 +13,8 @@ public class OverLoading {
     public OverLoading() {
         this("N/A");
     }
+
     public OverLoading(String text) {
-        System.out.println("Constructor: "+ text);
+        System.out.println("Constructor: " + text);
     }
 }

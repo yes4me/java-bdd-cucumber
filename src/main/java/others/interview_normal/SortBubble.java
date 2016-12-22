@@ -13,19 +13,19 @@ import java.util.Arrays;
 
 public class SortBubble {
     public static int[] sort(int[] myArray) {
-        if (myArray.length <2) {
+        if (myArray.length < 2) {
             return myArray;
         }
 
         boolean nochange;
         do {
             nochange = false;
-            for (int i=0, size=myArray.length-1; i<size; i++) {
-                if (myArray[i] > myArray[i+1]) {
+            for (int i = 0, size = myArray.length - 1; i < size; i++) {
+                if (myArray[i] > myArray[i + 1]) {
                     // swap i and i+1
-                    int tmp     = myArray[i+1];
-                    myArray[i+1]= myArray[i];
-                    myArray[i]  = tmp;
+                    int tmp = myArray[i + 1];
+                    myArray[i + 1] = myArray[i];
+                    myArray[i] = tmp;
                     nochange = true;
                 }
             }
@@ -33,10 +33,11 @@ public class SortBubble {
 
         return myArray;
     }
-    public static void main(String [] args) {
-        int[] myArray = {5,2,3,1,2};
+
+    public static void main(String[] args) {
+        int[] myArray = {5, 2, 3, 1, 2};
 
         myArray = sort(myArray);
-        System.out.println("bubble sort: "+ Arrays.toString(myArray));
+        System.out.println("bubble sort: " + Arrays.toString(myArray));
     }
 }

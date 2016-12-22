@@ -7,7 +7,7 @@ public final class PerformanceList {
     // Testing ADD
     public long addListTest(List<String> list, int limit) {
         final long start = System.nanoTime();
-        for (int i=0; i<limit; i++) {
+        for (int i = 0; i < limit; i++) {
             list.add(String.format("Element %d", i));
         }
         return System.nanoTime() - start;

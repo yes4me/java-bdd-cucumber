@@ -10,7 +10,7 @@
  * when computing factorial(16): fibonacci_v1 = fibonacci_v2
  * when computing factorial(30): fibonacci_v1 is 190% faster than fibonacci_v2
  */
-package others.interview_normal;
+package others.interview_easy;
 
 public class MathFibonacci {
     public static int fibonacci_v1(int n) {
@@ -21,41 +21,42 @@ public class MathFibonacci {
         if (n == 0) {
             return 0;
         }
-        for (int i=1; i<n; i++) {
+        for (int i = 1; i < n; i++) {
             result = value0 + value1;
             value0 = value1;
             value1 = result;
         }
         return result;
     }
+
     // Easier to write and understand, but slow
     public static int fibonacci_v2(int n) {
-        if (n==0) {
+        if (n == 0) {
             return 0;
-        } else if (n==1) {
+        } else if (n == 1) {
             return 1;
         }
-        return fibonacci_v2(n-1) + fibonacci_v2(n-2);
+        return fibonacci_v2(n - 1) + fibonacci_v2(n - 2);
     }
 
-    public static void main(String [] args) {
-        final int NUMBER  = 16;
-        long time1=0, time2=0;
-        long start=0;
+    public static void main(String[] args) {
+        final int NUMBER = 16;
+        long time1 = 0, time2 = 0;
+        long start = 0;
 
         start = System.nanoTime();
-        for (int i=0; i<NUMBER; i++) {
-            System.out.println(i +": fibonacci=" + fibonacci_v1(i) );
+        for (int i = 0; i < NUMBER; i++) {
+            System.out.println(i + ": fibonacci=" + fibonacci_v1(i));
         }
         time1 = System.nanoTime() - start;
 
         start = System.nanoTime();
-        for (int i=0; i<NUMBER; i++) {
-            System.out.println(i +": fibonacci=" + fibonacci_v2(i) );
+        for (int i = 0; i < NUMBER; i++) {
+            System.out.println(i + ": fibonacci=" + fibonacci_v2(i));
         }
         time2 = System.nanoTime() - start;
 
-        double result = (double) time1/time2;
-        System.out.println("fibonacci_v1 vs fibonacci_v2: " + result );
+        double result = (double) time1 / time2;
+        System.out.println("fibonacci_v1 vs fibonacci_v2: " + result);
     }
 }

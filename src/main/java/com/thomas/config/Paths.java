@@ -15,6 +15,7 @@ public class Paths {
     public static String getDataPath() {
         return new File("src/test/java/data/").getAbsolutePath();
     }
+
     public static String getDataPath(String file) {
         return getFullPath(getDataPath(), file);
     }
@@ -22,6 +23,7 @@ public class Paths {
     public static String getVendorPath() {
         return new File("vendor/").getAbsolutePath();
     }
+
     public static String getVendorPath(String file) {
         return getFullPath(getVendorPath(), file);
     }

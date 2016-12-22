@@ -17,6 +17,7 @@ import java.util.List;
 public class Cucumber_steps extends BaseUtil {
     // Defined only to show how to inject code into CucumberUtil step definitions
     private BaseUtil baseUtil;
+
     public Cucumber_steps(BaseUtil baseUtil) {
         this.baseUtil = baseUtil;
     }
@@ -44,7 +45,7 @@ public class Cucumber_steps extends BaseUtil {
         List<User> users = new ArrayList<User>();
         users = table.asList(User.class);
 
-        for (User user: users) {
+        for (User user : users) {
             System.out.println("username:" + user.getUsername());
             System.out.println("password:" + user.getPassword());
         }
@@ -54,6 +55,6 @@ public class Cucumber_steps extends BaseUtil {
     @And("^user enter the email address as \"([^\"]*)\"$")
     public void userEnterTheEmailAddressAs(@Transform(EmailTransform.class) String email) throws Throwable {
         // @Transform will modify the parameters before using it
-        System.out.println("## Email: "+ email +"##");
+        System.out.println("## Email: " + email + "##");
     }
 }

@@ -10,8 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  * Purpose: Initialize the framework
  */
 public class FrameworkInitialize extends Base {
-    public void InitializeBrowser(BrowserList browserType)
-    {
+    public void InitializeBrowser(BrowserList browserType) {
         WebDriver driver = null;
         switch (browserType) {
             case Chrome: {
@@ -22,7 +21,7 @@ public class FrameworkInitialize extends Base {
                 //Open the browser
                 //System.setProperty("webdriver.gecko.driver", "C:\\geckodriver-v0.11.1.exe");
                 System.setProperty("webdriver.gecko.driver", Paths.getVendorPath("geckodriver-v0.11.1.exe"));
-                driver= new FirefoxDriver();
+                driver = new FirefoxDriver();
                 break;
             }
             case IE: {

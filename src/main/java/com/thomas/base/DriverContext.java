@@ -15,6 +15,7 @@ public class DriverContext {
     public static Browser getBrowser() {
         return _browser;
     }
+
     public static void setBrowser(Browser browser) {
         _browser = browser;
     }
@@ -23,6 +24,7 @@ public class DriverContext {
     public static WebDriver getDriver() {
         return _driver;
     }
+
     public static void setDriver(WebDriver driver) {
         _driver = driver;
     }

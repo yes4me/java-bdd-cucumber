@@ -28,6 +28,7 @@ public final class MyList {
     public int[] getHighestValues() {
         return getHighestValues(this.list);
     }
+
     public int[] getHighestValues(int[] myArray) {
         if (myArray.length <= 1) {
             System.out.println("List needs to have at least 2 values");
@@ -36,11 +37,11 @@ public final class MyList {
 
         int[] result;
         if (myArray[0] < myArray[1]) {
-            result = new int[] {myArray[0], myArray[1]};
+            result = new int[]{myArray[0], myArray[1]};
         } else {
-            result = new int[] {myArray[1], myArray[0]};
+            result = new int[]{myArray[1], myArray[0]};
         }
-        for (int i=2, size=myArray.length; i<size; i++) {
+        for (int i = 2, size = myArray.length; i < size; i++) {
             if (result[1] < myArray[i]) {
                 // highest and second highest values need to be updated
                 result[0] = result[1];
@@ -56,8 +57,8 @@ public final class MyList {
     // Print array
     public void printArray(int[] myArray) {
         System.out.println("Printing the array:");
-        for (int i=0, size=myArray.length; i<size; i++) {
-            System.out.println("index:" + i +"\t-> value="+ myArray[i]);
+        for (int i = 0, size = myArray.length; i < size; i++) {
+            System.out.println("index:" + i + "\t-> value=" + myArray[i]);
         }
     }
 }

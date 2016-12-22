@@ -13,7 +13,7 @@ public abstract class BasePage extends Base {
     */
     public <ObjectPage extends BasePage> ObjectPage As(Class<ObjectPage> pageInstance) {
         try {
-            return (ObjectPage)this;
+            return (ObjectPage) this;
         } catch (Exception e) {
             e.getStackTrace();
         }

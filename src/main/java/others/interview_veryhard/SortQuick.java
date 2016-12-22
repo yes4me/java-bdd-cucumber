@@ -7,7 +7,7 @@
  * - put all the numbers smaller to the left side of the pivot and the other to the right side (= divide and conquer)
  * - splice the result and do that over and over
  */
-package others.interview_adv;
+package others.interview_veryhard;
 
 import java.util.Arrays;
 
@@ -48,7 +48,7 @@ public class SortQuick {
 
     public static void sort2(int[] values) {
         // check for empty or null array
-        if (values ==null || values.length==0){
+        if (values == null || values.length == 0) {
             return;
         }
         numbers = values;
@@ -59,7 +59,7 @@ public class SortQuick {
     private static void quicksort(int low, int high) {
         int i = low, j = high;
         // Get the pivot element from the middle of the list
-        int pivot = numbers[low + (high-low)/2];
+        int pivot = numbers[low + (high - low) / 2];
 
         // Divide into two lists
         while (i <= j) {
@@ -99,13 +99,13 @@ public class SortQuick {
     }
 
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         // WIP
-        int[] myArray = {5,4,3,2,1};
+        int[] myArray = {5, 4, 3, 2, 1};
 
         //sort(myArray);
         // http://www.vogella.com/tutorials/JavaAlgorithmsQuicksort/article.html
         // http://www.java2novice.com/java-sorting-algorithms/quick-sort/
-        System.out.println("sort: "+ Arrays.toString(numbers));
+        System.out.println("sort: " + Arrays.toString(numbers));
     }
 }

@@ -57,6 +57,7 @@ https://www.linkedin.com/in/thomasquang
     * junit: to run JUnit tests on the browser
     * TestNG: to run TestNG tests on the browser
     * jxl: for Excel library
+    * log4j-core and log4j-api: to generate log files
 
 ## Setup
 ---
@@ -106,17 +107,11 @@ To do:
 * Remove the driver from C: (ex: C:\geckodriver-v0.11.1.exe)
 * DefaultPage.java & BasePage.java
 * close browser after test
-* Take all the good codes from my other Java projects and include in this project 
+* Take all the good codes from my other Java projects and include in this project
+* Complete the Quick and Merge Sort 
 
 ## Other notes
 ---
-
-Folders:
-* my_notes: some notes to help installing
-* src/main: Hello world!
-* src/test: source files (features, step definitions, page objects, etc...)
-* target: library needed to run, output
-* vendor: Selenium webdrivers
 
 Shortcuts for Intellij IDEA:
 

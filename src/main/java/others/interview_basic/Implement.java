@@ -10,33 +10,36 @@ Example:
 
 package others.interview_basic;
 
-interface C
-{
-    int i=5;			//This must be defined
+interface C {
+    int i = 5;            //This must be defined
+
     //Only public or abstract functions allowed
-    public void method1();
-    public void method2();
+    void method1();
+
+    void method2();
 }
-class D implements C
-{
-    int i=10;
-    int j=10;
+
+class D implements C {
+    int i = 10;
+    int j = 10;
 
     //NO CHOICE:
     @Override
     public void method1() {
         System.out.println("CLASS D, method1");
     }
+
     @Override
     public void method2() {
         System.out.println("CLASS D, method2");
     }
 }
+
 public class Implement {
     public static void main(String[] args) {
         //C c1 = new C();	//NOT ALLOWED: Abstract cannot be ever instantiated
         //D d1 = new C();	//NOT ALLOWED: Abstract cannot be ever instantiated
-        C c = new D();		//c is an object D with the capability of C (= type C)
+        C c = new D();        //c is an object D with the capability of C (= type C)
         D d = new D();
 
         System.out.println("RUNNING class c METHODS:");
@@ -47,11 +50,11 @@ public class Implement {
         d.method1();
         d.method2();
 
-        System.out.println(c.i);				//c2.j is UNDEFINED
-        System.out.println(d.i +"__"+ d.j);
+        System.out.println(C.i);                //c2.j is UNDEFINED
+        System.out.println(d.i + "__" + d.j);
 
         //c.i=5;    // NOT ALLOWED: Interface variables are final
-        d.i=5;
-        d.j=5;
+        d.i = 5;
+        d.j = 5;
     }
 }

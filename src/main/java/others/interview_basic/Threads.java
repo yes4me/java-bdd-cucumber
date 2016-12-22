@@ -9,14 +9,14 @@ public class Threads {
 
         Thread thread1 = new Thread() {
             public void run() {
-                for (int i=0; i<NB_THREADS; i++) {
+                for (int i = 0; i < NB_THREADS; i++) {
                     System.out.println(i + " - this is thread1");
                 }
             }
         };
         Thread thread2 = new Thread() {
             public void run() {
-                for (int i=0; i<NB_THREADS; i++) {
+                for (int i = 0; i < NB_THREADS; i++) {
                     System.out.println(i + " - this is thread2");
                 }
             }

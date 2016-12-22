@@ -3,8 +3,7 @@ package others.page_objects;
 /**
  * Created by Thomas on 12/14/2016.
  */
-public class User
-{
+public class User {
     private String username;
     private String password;
 
@@ -17,6 +16,7 @@ public class User
     public String getUsername() {
         return username;
     }
+
     public String getPassword() {
         return password;
     }

@@ -1,14 +1,13 @@
 package features.SeleniumTest;
 
-import com.thomas.base.Base;
 import com.thomas.base.BrowserList;
 import com.thomas.base.DriverContext;
 import com.thomas.base.FrameworkInitialize;
 import com.thomas.utilities.ExcelUtil;
 import jxl.read.biff.BiffException;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import page_objects.HomePage;
 import page_objects.LoginPage;
 
@@ -19,8 +18,7 @@ import java.io.IOException;
  */
 public class LoginTest extends FrameworkInitialize {
     @Before
-    public void Initialize()
-    {
+    public void Initialize() {
         //Open the browser
         InitializeBrowser(BrowserList.Firefox);
         DriverContext.getBrowser().goUrl("http://executeautomation.com/demosite/Login.html");
@@ -33,6 +31,10 @@ public class LoginTest extends FrameworkInitialize {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @After
+    public void closing() {
     }
 
     @Test

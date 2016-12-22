@@ -19,26 +19,27 @@ public class SortSelection {
         }
 
         int size = myArray.length;
-        for (int i=0, sizei= size-1; i<sizei; i++) {
+        for (int i = 0, sizei = size - 1; i < sizei; i++) {
             int indexMin = i;
-            for (int j=i+1; j<size; j++) {
+            for (int j = i + 1; j < size; j++) {
                 if (myArray[indexMin] > myArray[j]) {
                     indexMin = j;
                 }
                 // System.out.println(i +"/"+ j +" : "+ indexMin);
             }
             // swap i and indexMin
-            int tmp             = myArray[indexMin];
-            myArray[indexMin]   = myArray[i];
-            myArray[i]          = tmp;
+            int tmp = myArray[indexMin];
+            myArray[indexMin] = myArray[i];
+            myArray[i] = tmp;
             // System.out.println("==>"+ Arrays.toString(myArray));
         }
         return myArray;
     }
-    public static void main(String [] args) {
-        int[] myArray = {5,2,3,1,2};
+
+    public static void main(String[] args) {
+        int[] myArray = {5, 2, 3, 1, 2};
 
         myArray = sort(myArray);
-        System.out.println("selection sort: "+ Arrays.toString(myArray));
+        System.out.println("selection sort: " + Arrays.toString(myArray));
     }
 }

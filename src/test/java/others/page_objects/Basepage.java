@@ -15,7 +15,7 @@ public class Basepage {
     }
 
 	/* ---------------------------------------------------------------------------
-	Getter and Setter methods
+    Getter and Setter methods
 	--------------------------------------------------------------------------- */
 
     public WebDriver getWebDriver() {
