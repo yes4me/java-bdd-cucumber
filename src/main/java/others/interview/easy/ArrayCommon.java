@@ -16,7 +16,7 @@ public class ArrayCommon {
     // Set the values of array into the map
     public static void setup(int[] myArray) {
         for (int i=0, size=myArray.length; i<size; i++) {
-            Object o = valueCounter.get(myArray[i]);
+            Integer o = valueCounter.get(myArray[i]);
             int counter = (o==null)? 0 : (int)o;
             valueCounter.put(myArray[i], ++counter);
         }

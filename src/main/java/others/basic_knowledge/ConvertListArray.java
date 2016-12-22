@@ -21,8 +21,8 @@ public class ConvertListArray {
         for (int i=0, size=myList.size(); i<size; i++) {
             System.out.println("value=" + myList.get(i));
         }
-        System.out.println("Get the value of the list (version2):");
 
+        System.out.println("Get the value of the list (version2):");
         Iterator<Integer> iterator = myList.iterator();
         while (iterator.hasNext()) {
             System.out.println("value=" + iterator.next());
