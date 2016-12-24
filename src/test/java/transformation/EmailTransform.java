@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
  * Created by Thomas on 12/24/2016.
  */
 public class EmailTransform extends Transformer<String> {
+    // In my experience, this doesn't work with java8
 
     @Override
     public String transform(String email) {

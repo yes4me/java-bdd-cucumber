@@ -1,6 +1,5 @@
 package step_definitions;
 
-import com.thomas.base.Base;
 import cucumber.api.DataTable;
 import cucumber.api.Transform;
 import cucumber.api.java.en.And;

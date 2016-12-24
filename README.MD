@@ -167,6 +167,7 @@ Specific definitions to this framework:
     * [Java: Automation framework with Selenium (Advanced)](https://www.udemy.com/automation-framework-with-selenium/learn/v4/content)
     * [Java: xls file parsing](http://executeautomation.com/blog/data-driven-testing-in-selenium-using-jxl-part-1.2/)
     * [Java: correct way to declare a map](http://stackoverflow.com/questions/41309387/difference-in-declaring-a-map)
+    * [Java: reflection](https://www.mkyong.com/java/how-to-use-reflection-to-call-java-method-at-runtime/)
 
 * Inspirational codes:
 

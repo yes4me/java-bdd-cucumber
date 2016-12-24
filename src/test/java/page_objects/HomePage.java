@@ -10,18 +10,19 @@ import org.openqa.selenium.support.How;
  */
 public class HomePage extends BasePage {
     @FindBy(how = How.NAME, using = "FirstName")
-    private WebElement txtFirstName;
+    private WebElement txtFirstname;
     @FindBy(how = How.NAME, using = "MiddleName")
-    private WebElement txtMiddleName;
+    private WebElement txtMiddlename;
 
     public HomePage() {
+        System.out.println("HELLO");
     }
 
-    public void setFirstName(String name) {
-        txtFirstName.sendKeys(name);
+    public void setFirstname(String name) {
+        txtFirstname.sendKeys(name);
     }
 
-    public void setMiddleName(String name) {
-        txtMiddleName.sendKeys(name);
+    public void setMiddlename(String name) {
+        txtMiddlename.sendKeys(name);
     }
 }

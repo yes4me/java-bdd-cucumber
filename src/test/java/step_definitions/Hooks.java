@@ -1,5 +1,6 @@
 package step_definitions;
 
+import com.thomas.base.Browser;
 import com.thomas.base.DriverContext;
 import com.thomas.base.FrameworkInitialize;
 import com.thomas.config.Settings;
@@ -14,16 +15,13 @@ import java.io.IOException;
 public class Hooks extends FrameworkInitialize {
     @Before
     public void Initialize() throws IOException {
-        System.out.println("@@ BEFORE");
         Settings.populateSettings();
 
         //Open the browser
         InitializeBrowser(Settings.browserName);
-        DriverContext.getBrowser().goUrl(Settings.url);
     }
 
     @After
     public void closing() {
-        System.out.println("@@ AFTER");
     }
 }

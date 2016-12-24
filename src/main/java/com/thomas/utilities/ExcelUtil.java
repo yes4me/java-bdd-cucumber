@@ -112,7 +112,7 @@ public class ExcelUtil {
     ----------------------------------------------------- */
 
     public static void main(String[] args) {
-        // Data Driven Test: Open an Excel file to get all username/password
+        // Data Driven Reflection: Open an Excel file to get all username/password
         try {
             ExcelUtil excelUtil = new ExcelUtil("login.xls");
 
