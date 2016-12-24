@@ -6,7 +6,6 @@
 * Purpose: End-to-End tests for UI testing on Windows
 * Author: Thomas Nguyen, thomas_ejob@hotmail.com
 * Date started: 2016/12/13
-* Last update: 2016/12/14
 
 ## Table of contents
 ---
@@ -27,8 +26,11 @@ This document will show you how to:
 ## Introduction
 ---
 
-Feel free to let me know ways to improve the code.
-Thank you in advance. 
+Hello,
+
+Thank you for having a look at my BDD framework written in Java. You can download the latest code at my [repository](https://github.com/yes4me/java-bdd-cucumber). Feel free to comment. Nobody can improve without feedback. Thank you in advance. 
+
+Sincerely,
 
 Thomas Nguyen, thomas_ejob@hotmail.com
 https://www.linkedin.com/in/thomasquang
@@ -167,6 +169,7 @@ Specific definitions to this framework:
     * [Java: Automation framework with Selenium (Basic)](https://www.udemy.com/cucumber-with-selenium/learn/v4/overview)
     * [Java: Automation framework with Selenium (Advanced)](https://www.udemy.com/automation-framework-with-selenium/learn/v4/content)
     * [Java: xls file parsing](http://executeautomation.com/blog/data-driven-testing-in-selenium-using-jxl-part-1.2/)
+    * [Java: correct way to declare a map](http://stackoverflow.com/questions/41309387/difference-in-declaring-a-map)
 
 * Inspirational codes:
 

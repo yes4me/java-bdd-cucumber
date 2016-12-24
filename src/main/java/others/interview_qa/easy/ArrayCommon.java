@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ArrayCommon {
-    static Map<Integer, Integer> valueCounter = new HashMap();
+    static Map<Integer, Integer> valueCounter = new HashMap<>();
 
     // Set the values of array into the map
     public static void setup(int[] myArray) {

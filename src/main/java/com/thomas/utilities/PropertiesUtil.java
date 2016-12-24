@@ -39,7 +39,7 @@ public class PropertiesUtil {
     public static Map<String, String> getAllProperties(String filename) {
         Properties properties   = new Properties();
         InputStream input       = null;
-        Map<String, String> data = new HashMap<String, String>();
+        Map<String, String> data = new HashMap<>();
 
         try {
             input = new FileInputStream(filename);

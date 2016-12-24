@@ -16,13 +16,13 @@ public class Settings {
     public static BrowserList browserName;
     public static String url;
 
-    public static void PopulateSettings(String filename) {
+    public static void populateSettings(String filename) {
         Map<String, String> data = PropertiesUtil.getAllProperties(filename);
         Settings.browserName = BrowserList.valueOf(data.get("BROWSERNAME"));
         Settings.url = data.get("URL");
     }
-    public static void PopulateSettings() {
-        PopulateSettings(CONFIG_FILENAME);
+    public static void populateSettings() {
+        populateSettings(CONFIG_FILENAME);
     }
 
     /* -----------------------------------------------------
@@ -30,7 +30,7 @@ public class Settings {
     ----------------------------------------------------- */
 
     public static void main(String[] args) {
-        PopulateSettings();
+        populateSettings();
         System.out.println("browserName = " + Settings.browserName);
         System.out.println("url = " + Settings.url);
     }

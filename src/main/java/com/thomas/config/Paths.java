@@ -9,7 +9,8 @@ import java.io.File;
  */
 public class Paths {
     private static String getPath(String defaultPath, String... file) {
-        String filename = (file.length>0)? file[0] : defaultPath;
+        String filename = (file.length>0)? file[0] : "";
+        filename = defaultPath.concat(filename);
         return FileUtil.getFullpath(filename);
     }
 
@@ -36,5 +37,6 @@ public class Paths {
         System.out.println( getPropertiesPath() );
         System.out.println( getDataPath() );
         System.out.println( getVendorPath() );
+        System.out.println( getVendorPath("test.exe") );
     }
 }

@@ -62,7 +62,7 @@ public class ArrayCountSum {
 
         // If you use boolean[], it only works for duplicate & negative values. You need to calculate the array size
         // If you use int[],     it only works for negative values
-        Map<Integer, Integer> valueCounter = new HashMap();
+        Map<Integer, Integer> valueCounter = new HashMap<>();
         for (int i=0, size=myArray.length; i<size; i++) {
             int difference  = sum - myArray[i];
 

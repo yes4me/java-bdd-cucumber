@@ -18,11 +18,11 @@ import java.io.IOException;
 public class LoginTest extends FrameworkInitialize {
     @Before
     public void Initialize() throws IOException {
-        Settings.PopulateSettings();
+        Settings.populateSettings();
 
         //Open the browser
-        InitializeBrowser(BrowserList.Firefox);
-        DriverContext.getBrowser().goUrl("http://executeautomation.com/demosite/Login.html");
+        InitializeBrowser(Settings.browserName);
+        DriverContext.getBrowser().goUrl(Settings.url);
     }
 
     @After
