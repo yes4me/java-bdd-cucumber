@@ -10,7 +10,7 @@
  * - of 3 and 5, print “FizzBuzz”.
  */
 
-package others.interview.easy;
+package others.interview_qa.easy;
 
 public class Fizzbuzz {
     public static String fizzbuzz(int number) {

@@ -7,7 +7,7 @@
  * - put all the numbers smaller to the left side of the pivot and the other to the right side (= divide and conquer)
  * - splice the result and do that over and over
  */
-package others.interview.veryhard_WIP;
+package others.interview_qa.veryhard_WIP;
 
 import java.util.Arrays;
 

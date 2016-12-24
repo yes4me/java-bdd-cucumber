@@ -5,21 +5,21 @@
  * Goal: Given array of n integers and given a number X
  * find all the unique pairs of elements (a,b), whose summation is equal to X
  *
- * Questions to ask during interview:
+ * Questions to ask during interview_qa:
  * - is the array sorted?
  * - are duplicate numbers allowed?
  * - can the numbers be negative?
  * - speed matter?
  */
 
-package others.interview.normal;
+package others.interview_qa.normal;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class ArrayCountSum {
     // Good: Easy solution, and work for unsorted array with any number
-    // Bad: Slow O(n2) and "BAD" answer for interview
+    // Bad: Slow O(n2) and "BAD" answer for interview_qa
     public static int getPairsCount_v1(int[] myArray, int sum) {
         int size    = myArray.length;
         int count   = 0;
@@ -34,7 +34,7 @@ public class ArrayCountSum {
         return count;
     }
     // Good: Tricky "solution"
-    // Bad: Work only for SORTED array with NO duplicate (= we cannot twice the same numbers)
+    // Bad: Work only for SORTED array with NO duplicate (= we cannot have the same numbers)
     public static int getPairsCount_v2(int[] myArray, int sum) {
         int size    = myArray.length;
         int count   = 0;
@@ -55,7 +55,7 @@ public class ArrayCountSum {
         return count;
     }
 
-    // Good: BEST interview solution
+    // Good: BEST interview_qa solution
     public static int getPairsCount_v3(int[] myArray, int sum)
     {
         int count = 0;

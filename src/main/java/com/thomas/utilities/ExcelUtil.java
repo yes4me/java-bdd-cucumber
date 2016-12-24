@@ -19,9 +19,9 @@ public class ExcelUtil {
     private static Workbook workbook = null;
     private static Hashtable headerMap = new Hashtable();
 
-    // =============================================================================================
-    // Construtors overloading
-    // =============================================================================================
+  	/* -----------------------------------------------------
+	Construtors overloading
+	----------------------------------------------------- */
 
     public ExcelUtil(String excelFilename) throws BiffException, IOException {
         this(excelFilename, 0);
@@ -29,6 +29,7 @@ public class ExcelUtil {
 
     public ExcelUtil(String excelFilename, int index) throws BiffException, IOException {
         excelFilename = Paths.getDataPath(excelFilename);
+        System.out.println("excelFilename = " + excelFilename);
 
         //Initialize
         workbook = Workbook.getWorkbook(new File(excelFilename));
@@ -53,9 +54,9 @@ public class ExcelUtil {
         initHeaderMap();
     }
 
-    // =============================================================================================
-    // Private methods for headers
-    // =============================================================================================
+  	/* -----------------------------------------------------
+	Private methods for headers
+	----------------------------------------------------- */
 
     //The dictionary holds all the column positions for each header
     private static void initHeaderMap() {
@@ -77,9 +78,9 @@ public class ExcelUtil {
         }
     }
 
-    // =============================================================================================
-    // Public methods
-    // =============================================================================================
+  	/* -----------------------------------------------------
+	Public methods
+	----------------------------------------------------- */
 
     //Returns the number of (vertical) rows
     public static int getRowCount() {
@@ -100,5 +101,27 @@ public class ExcelUtil {
     public static String getCell(String columnName, int rowNumber) {
         int id = getCellID(columnName);
         return (id >= 0 && rowNumber >= 0) ? getCell(id, rowNumber) : "";
+    }
+
+    /* -----------------------------------------------------
+    For testing purpose
+    ----------------------------------------------------- */
+
+    public static void main(String[] args) {
+        // Data Driven Test: Open an Excel file to get all username/password
+        try {
+            ExcelUtil excelUtil = new ExcelUtil("login.xls");
+        } catch (BiffException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+//        System.out.println("rowcount:" + ExcelUtil.getRowCount() );
+//        System.out.println("colcount:" + ExcelUtil.getColCount() );
+//        System.out.println("==>-1:" + ExcelUtil.getCell("Password", -1));
+//        System.out.println("==>0:" + ExcelUtil.getCell("Password", 0));
+//        System.out.println("==>1:" + ExcelUtil.getCell("Password", 2));
+//        System.out.println("==>2:" + ExcelUtil.getCell("password", 2));
     }
 }

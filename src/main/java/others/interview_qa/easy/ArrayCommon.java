@@ -5,7 +5,7 @@
  * find the common elements between 3 arrays
  */
 
-package others.interview.easy;
+package others.interview_qa.easy;
 
 import java.util.HashMap;
 import java.util.Map;

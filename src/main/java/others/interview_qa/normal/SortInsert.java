@@ -7,7 +7,7 @@
  * - complexity = n(n-1)/2 AT WORST
   * - Bubble sort < Selection sort < Insertion sort
 */
-package others.interview.normal;
+package others.interview_qa.normal;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-/**
+/** [WIP]
  * Author: Thomas Nguyen
  * Date created: 2016/12/22
  *
@@ -8,9 +8,14 @@
  * [1,3,5,[6,7],8,9,10,[11,13,15,[16,17,[18,19]]],20]
  * Becomes:
  * [1,3,5,6,7,8,9,10,11,13,15,16,17,18,19,20]
+ *
+ * http://stackoverflow.com/questions/30950677/flatten-out-a-list-in-java
+ * https://evanhoffman.com/2010/04/17/code-to-flatten-a-list-in-java-with-and-without-recursion/
+ * https://rosettacode.org/wiki/Flatten_a_list#Java
+ * http://stackoverflow.com/questions/40186270/java-flatten-an-array-using-recursion
  */
 
-package others.interview.veryhard_WIP;
+package others.interview_qa.veryhard_WIP;
 
 import java.lang.reflect.Array;
 

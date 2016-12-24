@@ -104,11 +104,13 @@ https://www.linkedin.com/in/thomasquang
 ---
 
 To do:
-* Remove the driver from C: (ex: C:\geckodriver-v0.11.1.exe)
 * DefaultPage.java & BasePage.java
 * close browser after test
+* Complete the Quick and Merge Sort, and flatten array 
 * Take all the good codes from my other Java projects and include in this project
-* Complete the Quick and Merge Sort 
+* Reporting
+    https://www.udemy.com/cucumber-with-selenium/learn/v4/t/lecture/5979654
+* Database MySQL: chap29
 
 ## Other notes
 ---
@@ -132,10 +134,16 @@ QA general definitions:
 * TDD = Test-Driven Development = tests to validate expected behavior
 * Data Driven Testing: using data sources (ex: XML, Excel sheets, Database Tables) 
 * Gherkin = language specification for Cucumber for the purpose of documentation and automated tests
+* load test = test to check the behaviour of the system under a specific expected load (= nb of concurent users)
+* stress test = test to check the behaviour of the system under an extreme load (= unexpected nb of concurent users)
 * black box test = software testing method in which the internal structure/ design/ implementation of the item being tested is NOT known to the tester
 * white box test = software testing method in which the internal structure/ design/ implementation of the item being tested is known to the tester
 * Unit Test = white box testing on the code
 * Cucumber = popular tool to help write BDD
+
+Coding definitions:
+* space complexity = describes how much (extra)space would be required by the algorithm with change in the input size (= nb values changed needed to perform the change)
+* time complexity = describes how much time algorithm consumes based on the length of the input (= nb of times in the loops)
 
 Specific definitions to this framework:
 * glue = map the features to step definitions

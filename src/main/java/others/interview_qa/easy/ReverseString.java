@@ -9,7 +9,7 @@
  * - StringBuilder:mutable                              => FASTER than StringBuffer
  */
 
-package others.interview.easy;
+package others.interview_qa.easy;
 
 public class ReverseString {
     public static String reverseText1(String text) {

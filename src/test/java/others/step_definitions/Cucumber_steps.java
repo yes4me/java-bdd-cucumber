@@ -22,7 +22,7 @@ public class Cucumber_steps extends BaseUtil {
         this.baseUtil = baseUtil;
     }
 
-    // ==================================================
+    // =====================================================
 
     @Given("^user goes to fake website$")
     public void userGoesToFakeWebsite() throws Throwable {

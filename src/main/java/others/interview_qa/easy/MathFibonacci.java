@@ -10,7 +10,7 @@
  * when computing factorial(16): fibonacci_v1 = fibonacci_v2
  * when computing factorial(30): fibonacci_v1 is 190% faster than fibonacci_v2
  */
-package others.interview.easy;
+package others.interview_qa.easy;
 
 public class MathFibonacci {
     public static int fibonacci_v1(int n) {

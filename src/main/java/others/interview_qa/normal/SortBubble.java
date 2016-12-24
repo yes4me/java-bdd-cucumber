@@ -7,7 +7,7 @@
  * - complexity = О(n2) ALWAYS
   * - Bubble sort < Selection sort < Insertion sort
  */
-package others.interview.normal;
+package others.interview_qa.normal;
 
 import java.util.Arrays;
 

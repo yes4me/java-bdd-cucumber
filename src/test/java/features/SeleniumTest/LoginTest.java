@@ -3,13 +3,12 @@ package features.SeleniumTest;
 import com.thomas.base.BrowserList;
 import com.thomas.base.DriverContext;
 import com.thomas.base.FrameworkInitialize;
+import com.thomas.config.Settings;
 import com.thomas.utilities.ExcelUtil;
 import jxl.read.biff.BiffException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import page_objects.HomePage;
-import page_objects.LoginPage;
 
 import java.io.IOException;
 
@@ -18,19 +17,12 @@ import java.io.IOException;
  */
 public class LoginTest extends FrameworkInitialize {
     @Before
-    public void Initialize() {
+    public void Initialize() throws IOException {
+        Settings.PopulateSettings();
+
         //Open the browser
         InitializeBrowser(BrowserList.Firefox);
         DriverContext.getBrowser().goUrl("http://executeautomation.com/demosite/Login.html");
-
-        // Data Driven Test: Open an Excel file to get all username/password
-        try {
-            ExcelUtil excelUtil = new ExcelUtil("login.xls");
-        } catch (BiffException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     @After
@@ -50,18 +42,10 @@ public class LoginTest extends FrameworkInitialize {
         // Using Generics
         // - save memory (no need to allocate memory for each page = no more new ObjectPage() for each page)
         // - flexibility for currentPage to be any class. For example, if loginPage may return homePage or errorPage
-        currentPage = getInstance(LoginPage.class);
-        currentPage = currentPage.As(LoginPage.class).login("admin", "password");
-        Thread.sleep(1000);
-        currentPage.As(HomePage.class).setFirstName("firstname");
-        currentPage.As(HomePage.class).setMiddleName("middlename");
-
-        // Testing ExcelUtil
-//        System.out.println("rowcount:" + ExcelUtil.getRowCount() );
-//        System.out.println("colcount:" + ExcelUtil.getColCount() );
-//        System.out.println("==>-1:" + ExcelUtil.getCell("Password", -1));
-//        System.out.println("==>0:" + ExcelUtil.getCell("Password", 0));
-//        System.out.println("==>1:" + ExcelUtil.getCell("Password", 2));
-//        System.out.println("==>2:" + ExcelUtil.getCell("password", 2));
+//        currentPage = getInstance(LoginPage.class);
+//        currentPage = currentPage.As(LoginPage.class).login("admin", "password");
+//        Thread.sleep(1000);
+//        currentPage.As(HomePage.class).setFirstName("firstname");
+//        currentPage.As(HomePage.class).setMiddleName("middlename");
     }
 }

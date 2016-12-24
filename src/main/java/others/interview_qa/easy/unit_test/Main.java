@@ -5,7 +5,7 @@
  * Interview date: 2016/12/15
  */
 
-package others.interview.easy.unit_test;
+package others.interview_qa.easy.unit_test;
 
 import org.junit.Test;
 

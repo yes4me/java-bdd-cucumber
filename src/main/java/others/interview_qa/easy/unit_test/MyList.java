@@ -5,7 +5,7 @@ Date started: 2016/12/15
 Last update: 2016/12/15
 */
 
-package others.interview.easy.unit_test;
+package others.interview_qa.easy.unit_test;
 
 public final class MyList {
     private int[] list;

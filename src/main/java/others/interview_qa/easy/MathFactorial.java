@@ -5,7 +5,7 @@
  *
  * factorial_v1 is 118% faster than factorial_v2
  */
-package others.interview.easy;
+package others.interview_qa.easy;
 
 public class MathFactorial {
     // This is 118% faster than factorial_v2
@@ -20,7 +20,7 @@ public class MathFactorial {
         return result;
     }
 
-    // This was the question asked for interview, but this is slow
+    // This was the question asked for interview_qa, but this is slow
     public static double factorial_v2(int n) {
         if (n <= 1) {
             return 1;

@@ -4,7 +4,7 @@
  * Interview date: 2014/07/31
  */
 
-package others.interview.easy;
+package others.interview_qa.easy;
 
 import org.apache.commons.lang3.ArrayUtils;
 

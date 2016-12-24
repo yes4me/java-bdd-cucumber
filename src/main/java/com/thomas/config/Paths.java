@@ -1,30 +1,40 @@
 package com.thomas.config;
 
+import com.thomas.utilities.FileUtil;
+
 import java.io.File;
 
 /**
  * Created by Thomas on 12/21/2016.
  */
 public class Paths {
-    private static String getFullPath(String path, String filename) {
-        StringBuilder path_file = new StringBuilder();
-        path_file.append(path).append("\\").append(filename);
-        return path_file.toString();
+    private static String getPath(String defaultPath, String... file) {
+        String filename = (file.length>0)? file[0] : defaultPath;
+        return FileUtil.getFullpath(filename);
     }
 
-    public static String getDataPath() {
-        return new File("src/test/java/data/").getAbsolutePath();
+    // For properties files
+    public static String getPropertiesPath(String... file) {
+        return getPath("src/main/java/com/thomas/config/", file);
     }
 
-    public static String getDataPath(String file) {
-        return getFullPath(getDataPath(), file);
+    // For XLS files
+    public static String getDataPath(String... file) {
+        return getPath("src/test/java/data/", file);
     }
 
-    public static String getVendorPath() {
-        return new File("vendor/").getAbsolutePath();
+    // For Selenium webdriver
+    public static String getVendorPath(String... file) {
+        return getPath("vendor/", file);
     }
 
-    public static String getVendorPath(String file) {
-        return getFullPath(getVendorPath(), file);
+    /* -----------------------------------------------------
+    For testing purpose
+    ----------------------------------------------------- */
+
+    public static void main(String[] args) {
+        System.out.println( getPropertiesPath() );
+        System.out.println( getDataPath() );
+        System.out.println( getVendorPath() );
     }
 }
