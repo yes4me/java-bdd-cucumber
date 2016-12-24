@@ -89,10 +89,9 @@ https://www.linkedin.com/in/thomasquang
 
 1. Run Java code: src\main\java\com\thomas\HelloWorld.java
 2. Run src\test\java\features\test_cucumber.feature from IntelliJ
-
 3. Run src\test\java\features\test_cucumber8.feature from IntelliJ
-4. Run src\test\java\features\test_selenium.feature from IntelliJ
-5. Console command: start.bat
+4. Run src\test\java\features\Test_selenium.java from IntelliJ (JAVA file)
+5. Run src\test\java\features\test_selenium.feature from IntelliJ
 
 ## Uninstall
 ---

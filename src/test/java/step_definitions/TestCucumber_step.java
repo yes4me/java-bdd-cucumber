@@ -1,5 +1,6 @@
 package step_definitions;
 
+import com.thomas.base.Base;
 import cucumber.api.DataTable;
 import cucumber.api.Transform;
 import cucumber.api.java.en.And;
@@ -29,7 +30,7 @@ public class TestCucumber_step {
         }
         */
 
-        List<User> users = new ArrayList<User>();
+        List<User> users = new ArrayList<>();
         users = table.asList(User.class);
         for (User user : users) {
             System.out.println("username:" + user.getUsername());

@@ -1,5 +1,7 @@
-package features.SeleniumTest;
+package features;
 
+import com.thomas.base.DriverContext;
+import com.thomas.config.Settings;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -9,14 +11,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * Created by Thomas on 12/19/2016.
  */
-public class SeleniumTest {
+public class Test_selenium {
     //Global Variable
     private WebDriver _driver = null;
 
     @Before
     public void Initialize() {
+        Settings.populateSettings();
+
         //Open the browser
-        System.setProperty("webdriver.gecko.driver", "C:\\geckodriver-v0.11.1.exe");
+        System.setProperty("webdriver.gecko.driver", "vendor\\geckodriver-v0.11.1.exe");
         _driver = new FirefoxDriver();
         _driver.navigate().to("http://executeautomation.com/demosite/Login.html");
     }

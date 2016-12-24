@@ -3,9 +3,8 @@ package step_definitions;
 import com.thomas.base.DriverContext;
 import com.thomas.base.FrameworkInitialize;
 import com.thomas.config.Settings;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 
 import java.io.IOException;
 
@@ -15,6 +14,7 @@ import java.io.IOException;
 public class Hooks extends FrameworkInitialize {
     @Before
     public void Initialize() throws IOException {
+        System.out.println("@@ BEFORE");
         Settings.populateSettings();
 
         //Open the browser
@@ -24,5 +24,6 @@ public class Hooks extends FrameworkInitialize {
 
     @After
     public void closing() {
+        System.out.println("@@ AFTER");
     }
 }
