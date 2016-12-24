@@ -1,6 +1,5 @@
 package com.thomas.utilities;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -37,8 +36,8 @@ public class PropertiesUtil {
     }
 
     public static Map<String, String> getAllProperties(String filename) {
-        Properties properties   = new Properties();
-        InputStream input       = null;
+        Properties properties = new Properties();
+        InputStream input = null;
         Map<String, String> data = new HashMap<>();
 
         try {
@@ -54,8 +53,8 @@ public class PropertiesUtil {
             // get the property value and print it out
             Enumeration<?> e = properties.propertyNames();
             while (e.hasMoreElements()) {
-                String key  = (String) e.nextElement();
-                String value= properties.getProperty(key);
+                String key = (String) e.nextElement();
+                String value = properties.getProperty(key);
                 // System.out.println("Key: " + key + ", Value: " + value);
 
                 data.put(key, value);

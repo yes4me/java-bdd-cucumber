@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by Thomas on 12/19/2016.
  * Purpose: Keep the browser and webDriver variables
- * Called by the SeleniumTest/*Test files to define and get the driver
+ * Called by the features.SeleniumTest/*Test files to define and get the driver
  */
 public class DriverContext {
     private static Browser _browser;

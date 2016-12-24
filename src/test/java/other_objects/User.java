@@ -1,7 +1,7 @@
-package others.page_objects;
+package other_objects;
 
 /**
- * Created by Thomas on 12/14/2016.
+ * Created by Thomas on 12/23/2016.
  */
 public class User {
     private String username;

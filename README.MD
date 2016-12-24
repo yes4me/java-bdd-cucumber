@@ -87,11 +87,9 @@ https://www.linkedin.com/in/thomasquang
 ## Running the program
 ---
 
-1. Run Java code
-    * Go to: src\main\java\com\thomas\Main.java
-    * Run 'Main' (SHIFT F10)
-    * Result: Hello world
+1. Run Java code: src\main\java\com\thomas\HelloWorld.java
 2. Run src\test\java\features\test_cucumber.feature from IntelliJ
+
 3. Run src\test\java\features\test_cucumber8.feature from IntelliJ
 4. Run src\test\java\features\test_selenium.feature from IntelliJ
 5. Console command: start.bat

@@ -1,4 +1,4 @@
-package others.transformation;
+package transformation;
 
 import cucumber.api.Transformer;
 
@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Thomas on 12/14/2016.
+ * Created by Thomas on 12/24/2016.
  */
 public class EmailTransform extends Transformer<String> {
 

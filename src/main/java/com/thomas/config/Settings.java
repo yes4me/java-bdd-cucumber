@@ -18,6 +18,7 @@ public class Settings {
 
     public static void populateSettings(String filename) {
         Map<String, String> data = PropertiesUtil.getAllProperties(filename);
+
         Settings.browserName = BrowserList.valueOf(data.get("BROWSERNAME"));
         Settings.url = data.get("URL");
     }

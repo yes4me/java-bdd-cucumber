@@ -4,6 +4,6 @@
 public class HelloWorld {
     // Main to test the above function
     public static void main(String[] args) {
-        System.out.println("If this doesn't work, overwrite code.iml with old version");
+        System.out.println("If this doesn't work, fix code.iml");
     }
 }

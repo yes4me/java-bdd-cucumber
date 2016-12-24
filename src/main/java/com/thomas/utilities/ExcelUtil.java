@@ -20,7 +20,7 @@ public class ExcelUtil {
     private static Hashtable headerMap = new Hashtable();
 
   	/* -----------------------------------------------------
-	Construtors overloading
+    Construtors overloading
 	----------------------------------------------------- */
 
     public ExcelUtil(String excelFilename) throws BiffException, IOException {
@@ -103,6 +103,10 @@ public class ExcelUtil {
         return (id >= 0 && rowNumber >= 0) ? getCell(id, rowNumber) : "";
     }
 
+    public static void close() {
+        workbook.close();
+    }
+
     /* -----------------------------------------------------
     For testing purpose
     ----------------------------------------------------- */
@@ -111,17 +115,18 @@ public class ExcelUtil {
         // Data Driven Test: Open an Excel file to get all username/password
         try {
             ExcelUtil excelUtil = new ExcelUtil("login.xls");
+
+//            System.out.println("rowcount:" + ExcelUtil.getRowCount() );
+//            System.out.println("colcount:" + ExcelUtil.getColCount() );
+//            System.out.println("==>-1:" + ExcelUtil.getCell("Password", -1));
+//            System.out.println("==>0:" + ExcelUtil.getCell("Password", 0));
+//            System.out.println("==>1:" + ExcelUtil.getCell("Password", 2));
+//            System.out.println("==>2:" + ExcelUtil.getCell("password", 2));
+            ExcelUtil.close();
         } catch (BiffException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-//        System.out.println("rowcount:" + ExcelUtil.getRowCount() );
-//        System.out.println("colcount:" + ExcelUtil.getColCount() );
-//        System.out.println("==>-1:" + ExcelUtil.getCell("Password", -1));
-//        System.out.println("==>0:" + ExcelUtil.getCell("Password", 0));
-//        System.out.println("==>1:" + ExcelUtil.getCell("Password", 2));
-//        System.out.println("==>2:" + ExcelUtil.getCell("password", 2));
     }
 }

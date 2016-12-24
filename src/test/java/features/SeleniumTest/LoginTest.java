@@ -1,34 +1,13 @@
 package features.SeleniumTest;
 
-import com.thomas.base.BrowserList;
-import com.thomas.base.DriverContext;
-import com.thomas.base.FrameworkInitialize;
-import com.thomas.config.Settings;
-import com.thomas.utilities.ExcelUtil;
-import jxl.read.biff.BiffException;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
-
-import java.io.IOException;
+import page_objects.HomePage;
+import page_objects.LoginPage;
 
 /**
  * Created by Thomas on 12/19/2016.
  */
-public class LoginTest extends FrameworkInitialize {
-    @Before
-    public void Initialize() throws IOException {
-        Settings.populateSettings();
-
-        //Open the browser
-        InitializeBrowser(Settings.browserName);
-        DriverContext.getBrowser().goUrl(Settings.url);
-    }
-
-    @After
-    public void closing() {
-    }
-
+public class LoginTest extends Hooks {
     @Test
     public void login() throws InterruptedException {
         /*
@@ -42,10 +21,10 @@ public class LoginTest extends FrameworkInitialize {
         // Using Generics
         // - save memory (no need to allocate memory for each page = no more new ObjectPage() for each page)
         // - flexibility for currentPage to be any class. For example, if loginPage may return homePage or errorPage
-//        currentPage = getInstance(LoginPage.class);
-//        currentPage = currentPage.As(LoginPage.class).login("admin", "password");
-//        Thread.sleep(1000);
-//        currentPage.As(HomePage.class).setFirstName("firstname");
-//        currentPage.As(HomePage.class).setMiddleName("middlename");
+        currentPage = getInstance(LoginPage.class);
+        currentPage = currentPage.As(LoginPage.class).login("admin", "password");
+        Thread.sleep(1000);
+        currentPage.As(HomePage.class).setFirstName("firstname");
+        currentPage.As(HomePage.class).setMiddleName("middlename");
     }
 }
