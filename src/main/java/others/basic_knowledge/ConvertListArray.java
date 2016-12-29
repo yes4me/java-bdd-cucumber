@@ -11,7 +11,7 @@ public class ConvertListArray {
     public static void main(String[] args) {
         // Setup a list
         //List<Integer> myList = new ArrayList<Integer>();
-        List myList = new ArrayList<Integer>();
+        List<Integer> myList = new ArrayList<>();
         myList.add(2);
         myList.add(-5);
         myList.add(0);

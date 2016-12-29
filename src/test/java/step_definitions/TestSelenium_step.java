@@ -6,6 +6,7 @@ import com.thomas.config.Settings;
 import cucumber.api.PendingException;
 import cucumber.api.java8.En;
 import org.apache.commons.lang3.text.WordUtils;
+import org.junit.Assert;
 import page_objects.HomePage;
 import page_objects.LoginPage;
 
@@ -43,6 +44,9 @@ public class TestSelenium_step extends Base implements En {
         });
         And("^user sets the middlename to be \"([^\"]*)\" for the home page$", (String middlename) -> {
             currentPage.As(HomePage.class).setMiddlename(middlename);
+        });
+        Then("^verify this is the home page$", () -> {
+            Assert.assertTrue("The login page is not loaded", currentPage.As(HomePage.class).checkPage());
         });
     }
 }

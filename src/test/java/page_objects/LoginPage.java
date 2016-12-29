@@ -16,10 +16,10 @@ public class LoginPage extends BasePage {
     private WebElement txtPassword;
     @FindBy(how = How.NAME, using = "Login")
     private WebElement btnSubmit;
-    //@FindBy(how = How.CSS, using = "[class*='name']") private WebElement btnSubmit;
+    //@FindBy(how = How.CSS, using = "[class*='name']")
+    // private WebElement btnSubmit;
 
-    public LoginPage() {
-    }
+    public LoginPage() {}
 
     public BasePage login(String login, String password) {
         // WebElement txtLogin = DriverContext.getDriver().findElement(By.name("Login"));

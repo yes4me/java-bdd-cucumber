@@ -5,10 +5,10 @@
 
 Source: http://www.javacreed.com/comparing-the-performance-of-various-list-implementations/
 Result: 2016/12/16
-    ADD ArrayList vs LinkedList:	4.998746642803139
-    GET ArrayList vs LinkedList:	0.007662274819786448
-    SORT ArrayList vs LinkedList:	2.215224417590495
-    SIZE ArrayList vs LinkedList:	0.6315239233841223
+    ADD ArrayList vs LinkedList:	2.360982999512459
+    GET ArrayList vs LinkedList:	0.0019758275138858947
+    SORT ArrayList vs LinkedList:	1.1590501778652456
+    SIZE ArrayList vs LinkedList:	0.6376677017049953
 Conclusion:
     ArrayList  is better for: GET, SIZE (= READING)
     LinkedList is better for: ADD, SORT (= WRITING)
@@ -18,14 +18,15 @@ package others.performance_test.speed_list;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         final int NUMBER_TEST = 5000;
         PerformanceList performancelist = new PerformanceList();
 
-        ArrayList arrayList = new ArrayList();
-        LinkedList linkedList = new LinkedList();
+        List arrayList    = new ArrayList();
+        List linkedList   = new LinkedList();
 
         // insertion
         double timerArrayList1 = performancelist.addListTest(arrayList, NUMBER_TEST);

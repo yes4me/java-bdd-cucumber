@@ -9,7 +9,7 @@ public class ConvertSetArray {
     public static void main(String[] args) {
         // Setup a list
         //List<Integer> myList = new ArrayList<Integer>();
-        Set myList = new <Integer>HashSet();
+        Set<Integer> myList = new HashSet<>();
         myList.add(2);
         myList.add(-5);
         myList.add(0);

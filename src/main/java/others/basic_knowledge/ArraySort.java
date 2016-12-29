@@ -18,7 +18,7 @@ public class ArraySort {
     // sort by value! NO DUPLICATE!
     public static int[] sortArray_v2(int[] myArray) {
         // Set removes duplicate value automatically
-        Set<Integer> mySet = new HashSet<Integer>();
+        Set<Integer> mySet = new HashSet<>();
         for (int i=0, size=myArray.length; i<size; i++){
             mySet.add(myArray[i]);
         }

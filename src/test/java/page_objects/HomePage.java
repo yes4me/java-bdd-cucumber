@@ -14,8 +14,10 @@ public class HomePage extends BasePage {
     @FindBy(how = How.NAME, using = "MiddleName")
     private WebElement txtMiddlename;
 
-    public HomePage() {
-        System.out.println("HELLO");
+    public HomePage() {}
+
+    public boolean checkPage() {
+        return txtFirstname.isDisplayed();
     }
 
     public void setFirstname(String name) {

@@ -1,5 +1,4 @@
-/** [WIP]
- * Author: Thomas Nguyen
+/*
  * Date created: 2016/12/22
  *
  * Goal: Using recursion and not!

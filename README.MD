@@ -105,7 +105,6 @@ https://www.linkedin.com/in/thomasquang
 To do:
 * DefaultPage.java & BasePage.java
 * close browser after test
-* Complete the Quick and Merge Sort, and flatten array 
 * Take all the good codes from my other Java projects and include in this project
 * Reporting
     https://www.udemy.com/cucumber-with-selenium/learn/v4/t/lecture/5979654

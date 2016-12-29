@@ -18,7 +18,7 @@ public class Hooks extends FrameworkInitialize {
         Settings.populateSettings();
 
         //Open the browser
-        InitializeBrowser(Settings.browserName);
+        //InitializeBrowser(Settings.browserName);
     }
 
     @After
