@@ -7,6 +7,9 @@ Result: 2016/12/22, Java 1.8
     APPEND :	1.2314921080868106
 Conclusion:
     Operator + is 125% slower than concat
+Reason:
+    Concat: always produces a new String with result of concatenation
+    Operator: = (new StringBuilder(String.valueOf(s1)).append(s2).toString();
 */
 
 package others.performance_test.speed_concat;
