@@ -21,6 +21,5 @@ public class TestCucumber8_step implements En {
             CucumberUtil.set(table);
             // System.out.println("##"+ CucumberUtil.get("password") +"##");
         });
-
     }
 }

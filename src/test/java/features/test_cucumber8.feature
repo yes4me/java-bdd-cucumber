@@ -1,4 +1,4 @@
-@Testing-cucumber8
+@Test
 Feature: Test the Cucumber page with Java1.8
   Testing lambda expression
 

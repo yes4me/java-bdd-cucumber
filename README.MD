@@ -59,6 +59,8 @@ https://www.linkedin.com/in/thomasquang
     * junit: to run JUnit tests on the browser
     * TestNG: to run TestNG tests on the browser
     * jxl: for Excel library
+    * mysql-connector-java: connect to MySQL
+3. Optional Dependencies:
     * log4j-core and log4j-api: to generate log files
 
 ## Setup
@@ -103,12 +105,8 @@ https://www.linkedin.com/in/thomasquang
 ---
 
 To do:
-* DefaultPage.java & BasePage.java
 * close browser after test
 * Take all the good codes from my other Java projects and include in this project
-* Reporting
-    https://www.udemy.com/cucumber-with-selenium/learn/v4/t/lecture/5979654
-* Database MySQL: chap29
 
 ## Other notes
 ---
@@ -160,13 +158,14 @@ Specific definitions to this framework:
 * Tutorials:
 
     * [Java](https://www.tutorialspoint.com/java/java_regular_expressions.htm)
+    * [Java: correct way to declare a map](http://stackoverflow.com/questions/41309387/difference-in-declaring-a-map)
     * [Java: File Organization](https://web.archive.org/web/20130516014426/http://www.oracle.com/technetwork/java/codeconventions-141855.html#1852)
     * [Java: Generics](https://www.tutorialspoint.com/java/java_generics.htm)
+    * [Java: reflection](https://www.mkyong.com/java/how-to-use-reflection-to-call-java-method-at-runtime/)
     * [Java: Automation framework with Selenium (Basic)](https://www.udemy.com/cucumber-with-selenium/learn/v4/overview)
     * [Java: Automation framework with Selenium (Advanced)](https://www.udemy.com/automation-framework-with-selenium/learn/v4/content)
+    * [Java: MySQL](http://www.javatpoint.com/java-jdbc)
     * [Java: xls file parsing](http://executeautomation.com/blog/data-driven-testing-in-selenium-using-jxl-part-1.2/)
-    * [Java: correct way to declare a map](http://stackoverflow.com/questions/41309387/difference-in-declaring-a-map)
-    * [Java: reflection](https://www.mkyong.com/java/how-to-use-reflection-to-call-java-method-at-runtime/)
     * [TestNG configuration](http://sahajamit.github.io/Cucumber-JVM-with-TestNG/)
 
 * Inspirational codes:

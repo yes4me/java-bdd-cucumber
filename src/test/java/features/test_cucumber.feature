@@ -2,7 +2,7 @@ Feature: Test the Cucumber page
   Test if cucumber works in a Java framework
   If this doesn't work, edit the configuration, and glue to "step_definitions"
 
-  @Testing-cucumber
+  @Test
   Scenario: [Test#1.1] Testing cucumber (Java)
     Given user tests classic expression (using "Java")
     And user enters the following info (classic way)

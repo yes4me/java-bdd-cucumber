@@ -17,8 +17,8 @@ public class Hooks extends FrameworkInitialize {
     public void Initialize() throws IOException {
         Settings.populateSettings();
 
-        //Open the browser
-        InitializeBrowser(Settings.browserName);
+        // Open the browser
+        //InitializeBrowser(Settings.browserName);
     }
 
     @After

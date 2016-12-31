@@ -1,3 +1,4 @@
+@Test
 Feature: Testing Selenium with page objects
 
   Scenario: [Test#4] Testing Selenium

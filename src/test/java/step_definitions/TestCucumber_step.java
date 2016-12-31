@@ -2,15 +2,10 @@ package step_definitions;
 
 import com.thomas.utilities.CucumberUtil;
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.Transform;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import other_objects.User;
 import transformation.EmailTransform;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Thomas on 12/23/2016.
