@@ -1,9 +1,12 @@
 package com.thomas.base;
 
 import com.thomas.config.Paths;
+import com.thomas.config.Settings;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Thomas on 12/19/2016.
@@ -33,5 +36,7 @@ public class FrameworkInitialize extends Base {
         DriverContext.setBrowser(new Browser(driver));
         // Set the Driver (in DriverContext)
         DriverContext.setDriver(driver);
+
+        driver.manage().timeouts().implicitlyWait(Settings.timeoutDriver, TimeUnit.SECONDS);
     }
 }

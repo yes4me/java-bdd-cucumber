@@ -158,14 +158,15 @@ Specific definitions to this framework:
 * Tutorials:
 
     * [Java](https://www.tutorialspoint.com/java/java_regular_expressions.htm)
-    * [Java: correct way to declare a map](http://stackoverflow.com/questions/41309387/difference-in-declaring-a-map)
     * [Java: File Organization](https://web.archive.org/web/20130516014426/http://www.oracle.com/technetwork/java/codeconventions-141855.html#1852)
     * [Java: Generics](https://www.tutorialspoint.com/java/java_generics.htm)
     * [Java: reflection](https://www.mkyong.com/java/how-to-use-reflection-to-call-java-method-at-runtime/)
+    * [Java: type List](http://stackoverflow.com/questions/18410035/ways-to-iterate-over-a-list-in-java)
+    * [Java: type Map](http://stackoverflow.com/questions/41309387/difference-in-declaring-a-map)
     * [Java: Automation framework with Selenium (Basic)](https://www.udemy.com/cucumber-with-selenium/learn/v4/overview)
     * [Java: Automation framework with Selenium (Advanced)](https://www.udemy.com/automation-framework-with-selenium/learn/v4/content)
-    * [Java: MySQL](http://www.javatpoint.com/java-jdbc)
-    * [Java: xls file parsing](http://executeautomation.com/blog/data-driven-testing-in-selenium-using-jxl-part-1.2/)
+    * [Java: tool MySQL](http://www.javatpoint.com/java-jdbc)
+    * [Java: tool XLS](http://executeautomation.com/blog/data-driven-testing-in-selenium-using-jxl-part-1.2/)
     * [TestNG configuration](http://sahajamit.github.io/Cucumber-JVM-with-TestNG/)
 
 * Inspirational codes:

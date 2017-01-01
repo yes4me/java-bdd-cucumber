@@ -45,17 +45,20 @@ public class MathFibonacci {
         long time1 = 0, time2 = 0;
         long start = 0;
 
+        // First way
         start = System.nanoTime();
         for (int i = 0; i < NUMBER; i++) {
             System.out.println(i + ": fibonacci=" + fibonacci_v1(i));
         }
         time1 = System.nanoTime() - start;
 
+        // Second way
         start = System.nanoTime();
         for (int i = 0; i < NUMBER; i++) {
             System.out.println(i + ": fibonacci=" + fibonacci_v2(i));
         }
         time2 = System.nanoTime() - start;
+
 
         double result = (double) time1 / time2;
         System.out.println("fibonacci_v1 vs fibonacci_v2: " + result);

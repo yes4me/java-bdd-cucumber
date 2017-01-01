@@ -24,10 +24,5 @@ public class ArrayCopy {
         System.out.println("ORIGINAL: " + Arrays.toString(myArray));
         System.out.println("myArray1: " + Arrays.toString(myArray1));
         System.out.println("myArray2: " + Arrays.toString(myArray2));
-
-        String[] myString = {"aa", "bb", "cc"};
-        String[] tmp = Arrays.copyOf(myString, myString.length);
-        System.out.println(Arrays.toString(myString));
-        System.out.println(Arrays.toString(tmp));
     }
 }

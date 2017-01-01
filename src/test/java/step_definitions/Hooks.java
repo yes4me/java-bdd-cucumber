@@ -6,6 +6,8 @@ import com.thomas.base.FrameworkInitialize;
 import com.thomas.config.Settings;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 
 import java.io.IOException;
 
@@ -18,10 +20,11 @@ public class Hooks extends FrameworkInitialize {
         Settings.populateSettings();
 
         // Open the browser
-        //InitializeBrowser(Settings.browserName);
+        InitializeBrowser(Settings.browserName);
     }
 
     @After
     public void closing() {
+        //DriverContext.getDriver().quit();
     }
 }

@@ -25,7 +25,7 @@ public class RegularExpressions {
         System.out.println(text);
 
         // Regex to split
-        String[] result = text.split(" ");
+        String[] result = text.split("\\s");
         for (int i = 0, size = result.length; i < size; i++) {
             System.out.println(i + ":" + result[i]);
         }
