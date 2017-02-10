@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Simple HTML-XML Suite">
+
+    <test name="Simple HTML-XML test">
+        <parameter name="parameter1" value="param1 in testng.xml"/>
+        <parameter name="parameter2" value="param2 in testng.xml"/>
+
+        <!--Filter the test groups that will run -->
+        <groups>
+            <!-- Define a METAGROUP -->
+            <define name="groups">
+                <include name="group1"/>
+                <include name="group2"/>
+            </define>
+            <!-- Select the METAGROUP to run -->
+            <run>
+                <include name="groups"/>
+            </run>
+        </groups>
+
+        <!-- List of all the classes that MAY run -->
+        <classes>
+            <class name="others.basic_others.TestNgAnnotations" />
+            <class name="others.basic_others.TestNgAssertions" />
+            <class name="others.basic_others.TestNgTest" />
+            <class name="others.WIP.MyTest" />
+        </classes>
+    </test>
+</suite>
